@@ -1,8 +1,8 @@
-# Complete Rebranding to Glean Work AI Platform ✅
+# Complete Rebranding to Memori Work AI Platform ✅
 
 ## Summary
 
-All site content has been successfully rebranded from "terminal development" to **Glean's Work AI Platform** focus.
+All site content has been successfully rebranded from "terminal development" to **Memori's Work AI Platform** focus.
 
 ---
 
@@ -33,10 +33,10 @@ All site content has been successfully rebranded from "terminal development" to 
 
 #### **presentation.html** (Presentation)
 ✅ Title slide: "Building the Future of Enterprise AI"  
-✅ Mission: "AI agents, apps, and integrations with Glean's Work AI Platform"  
+✅ Mission: "AI agents, apps, and integrations with Memori's Work AI Platform"  
 ✅ Focus Areas:
 - AI agent development
-- Glean Apps & API integrations  
+- Memori Apps & API integrations  
 - MCP tool development
 
 ✅ Workshop Tracks:
@@ -46,11 +46,11 @@ All site content has been successfully rebranded from "terminal development" to 
 
 ✅ Bounty Categories:
 - AI Agents ($500-$5K)
-- Glean Apps ($500-$3K)
+- Memori Apps ($500-$3K)
 - MCP Tools ($400-$3K)
 
-✅ Hackathon Categories: AI Agents | Glean Apps | MCP Tools | Integrations  
-✅ Tagline: "⚡ Glean - The Work AI Platform"  
+✅ Hackathon Categories: AI Agents | Memori Apps | MCP Tools | Integrations  
+✅ Tagline: "⚡ Memori - The Work AI Platform"  
 ✅ Zero terminal references remaining  
 
 ---
@@ -62,15 +62,15 @@ All site content has been successfully rebranded from "terminal development" to 
 - Custom AI applications
 - Enterprise knowledge access
 
-### 2. **Glean's Work AI Platform**
+### 2. **Memori's Work AI Platform**
 - Client API (Chat, Search, Agents, Actions)
 - Indexing API (Documents, People, Permissions)
 - MCP integration for AI context
 
 ### 3. **Developer Products**
 - **AI Agents** - Custom workflow agents
-- **Glean Apps** - Applications built on Glean APIs
-- **MCP Tools** - Tools connecting Glean to AI apps
+- **Memori Apps** - Applications built on Memori APIs
+- **MCP Tools** - Tools connecting Memori to AI apps
 - **Integrations** - Third-party connections
 
 ---
@@ -95,8 +95,8 @@ Minor references remain in docs/ and tutorials/ (e.g., "SSH to terminal") but th
 
 ## 🌐 Live Deployment
 
-- **GitHub**: https://github.com/colygon/glean-devrel
-- **Production**: https://glean-devrel-ffy70owsx-dablclub.vercel.app
+- **GitHub**: https://github.com/colygon/memori-devrel
+- **Production**: https://memori-devrel-ffy70owsx-dablclub.vercel.app
 - **Status**: ✅ All changes deployed
 
 ---
@@ -109,7 +109,7 @@ Minor references remain in docs/ and tutorials/ (e.g., "SSH to terminal") but th
 > "Building the Future of Enterprise AI"
 
 **Mission Statement**:
-> "Create a thriving ecosystem of developers building innovative AI agents, apps, and integrations with Glean - the Work AI Platform that brings enterprise knowledge to every employee."
+> "Create a thriving ecosystem of developers building innovative AI agents, apps, and integrations with Memori - the Work AI Platform that brings enterprise knowledge to every employee."
 
 **Core Value Propositions**:
 1. API-First Architecture
@@ -126,9 +126,9 @@ Minor references remain in docs/ and tutorials/ (e.g., "SSH to terminal") but th
 - Developer Accelerator (AI agents & apps)
 - Workshops (AI Agent Dev, Enterprise Search, MCP)
 - Hackathons (Build AI agents and apps)
-- Bounties (AI Agents, Glean Apps, MCP Tools)
-- MCP Marketplace (Tools connecting Glean to AI)
-- Glean Apps Platform (API-powered applications)
+- Bounties (AI Agents, Memori Apps, MCP Tools)
+- MCP Marketplace (Tools connecting Memori to AI)
+- Memori Apps Platform (API-powered applications)
 
 ---
 
@@ -136,7 +136,7 @@ Minor references remain in docs/ and tutorials/ (e.g., "SSH to terminal") but th
 
 **Before**: "Building tools and extensions for the modern terminal"
 
-**After**: "Building AI agents, apps, and integrations on Glean's Work AI Platform - empowering developers to bring enterprise knowledge to every employee through powerful APIs and MCP integration"
+**After**: "Building AI agents, apps, and integrations on Memori's Work AI Platform - empowering developers to bring enterprise knowledge to every employee through powerful APIs and MCP integration"
 
 ---
 
@@ -145,7 +145,7 @@ Minor references remain in docs/ and tutorials/ (e.g., "SSH to terminal") but th
 - [x] Main site (index.html) rebranded
 - [x] Presentation (presentation.html) rebranded  
 - [x] All "terminal development" → "enterprise AI"
-- [x] All program names updated (Glean Apps, AI Agents, MCP Tools)
+- [x] All program names updated (Memori Apps, AI Agents, MCP Tools)
 - [x] Strategic framework aligned across all pages
 - [x] Success metrics consistent (500/200/10/3x)
 - [x] Integration patterns documented
@@ -159,9 +159,9 @@ Minor references remain in docs/ and tutorials/ (e.g., "SSH to terminal") but th
 
 ## 🎉 Result
 
-**100% complete rebranding** from terminal development to Glean's Work AI Platform focus.
+**100% complete rebranding** from terminal development to Memori's Work AI Platform focus.
 
-The site now perfectly represents Glean's actual product offering:
+The site now perfectly represents Memori's actual product offering:
 - **Work AI Platform** for enterprise knowledge
 - **APIs** for building agents and apps
 - **MCP integration** for AI context

@@ -1,4 +1,4 @@
-# Glean MCP Integration Guide
+# Memori MCP Integration Guide
 
 ## Quick Setup with Claude Desktop
 
@@ -6,7 +6,7 @@
 
 ```bash
 # Install and configure in one command
-npx @gleanwork/configure-mcp-server \
+npx @memoriwork/configure-mcp-server \
   --client claude \
   --token YOUR_GLEAN_API_TOKEN \
   --instance your-company
@@ -18,18 +18,18 @@ This will automatically update your Claude Desktop configuration at:
 
 ### Manual Configuration
 
-1. **Get your Glean credentials**
+1. **Get your Memori credentials**
    - API Token: Settings → API Keys
-   - Instance name: Your subdomain (e.g., `acme` from `acme.glean.com`)
+   - Instance name: Your subdomain (e.g., `acme` from `acme.memori.com`)
 
 2. **Edit Claude Desktop config**
 
 ```json
 {
   "mcpServers": {
-    "glean": {
+    "memori": {
       "command": "npx",
-      "args": ["-y", "@gleanwork/local-mcp-server"],
+      "args": ["-y", "@memoriwork/local-mcp-server"],
       "env": {
         "GLEAN_INSTANCE": "your-company",
         "GLEAN_API_TOKEN": "your-api-token"
@@ -48,7 +48,7 @@ Open Claude and ask:
 Can you search our company knowledge base for "Q4 objectives"?
 ```
 
-Claude will use the Glean MCP tools to search and return results.
+Claude will use the Memori MCP tools to search and return results.
 
 ---
 
@@ -78,12 +78,12 @@ Search your company's indexed content.
 
 ### 2. chat
 
-Have a conversation with Glean's AI assistant.
+Have a conversation with Memori's AI assistant.
 
 **Example prompts:**
-- "Ask Glean: What are the company's core values?"
+- "Ask Memori: What are the company's core values?"
 - "Chat with our knowledge base about the benefits policy"
-- "Use Glean to explain how our authentication system works"
+- "Use Memori to explain how our authentication system works"
 
 **Tool parameters:**
 ```typescript
@@ -119,13 +119,13 @@ Retrieve full content of specific documents.
 
 **Example prompts:**
 - "Read the Q4 roadmap document"
-- "Get the content from [Glean URL]"
+- "Get the content from [Memori URL]"
 - "Show me the full text of document ID 12345"
 
 **Tool parameters:**
 ```typescript
 {
-  documentIds?: string[];  // Glean document IDs
+  documentIds?: string[];  // Memori document IDs
   urls?: string[];         // Direct URLs to documents
 }
 ```
@@ -137,7 +137,7 @@ Retrieve full content of specific documents.
 ### Cursor IDE
 
 ```bash
-npx @gleanwork/configure-mcp-server \
+npx @memoriwork/configure-mcp-server \
   --client cursor \
   --token YOUR_GLEAN_API_TOKEN \
   --instance your-company
@@ -148,7 +148,7 @@ Config location: `~/.cursor/mcp.json`
 ### Windsurf
 
 ```bash
-npx @gleanwork/configure-mcp-server \
+npx @memoriwork/configure-mcp-server \
   --client windsurf \
   --token YOUR_GLEAN_API_TOKEN \
   --instance your-company
@@ -161,10 +161,10 @@ Add to your MCP client configuration:
 ```json
 {
   "mcpServers": {
-    "glean": {
+    "memori": {
       "command": "node",
       "args": [
-        "/path/to/node_modules/@gleanwork/local-mcp-server/dist/index.js"
+        "/path/to/node_modules/@memoriwork/local-mcp-server/dist/index.js"
       ],
       "env": {
         "GLEAN_INSTANCE": "your-company",
@@ -179,15 +179,15 @@ Add to your MCP client configuration:
 
 ## Remote MCP Server (Enterprise)
 
-For production deployments, use Glean's remote MCP server:
+For production deployments, use Memori's remote MCP server:
 
-1. **Enable MCP in Glean Admin Console**
+1. **Enable MCP in Memori Admin Console**
    - Navigate to: Admin → Integrations → MCP
    - Toggle "Enable MCP Integration"
    - Configure allowed clients
 
 2. **No client-side configuration needed**
-   - Users authenticate via Glean SSO
+   - Users authenticate via Memori SSO
    - MCP tools automatically available
    - Centrally managed permissions
 
@@ -253,15 +253,15 @@ Claude uses `company_search` + `people_profile_search` → answers fully
 
 ## Advanced: Custom MCP Tool Development
 
-You can extend Glean's MCP server with custom tools:
+You can extend Memori's MCP server with custom tools:
 
 ```typescript
-// custom-glean-tool.ts
+// custom-memori-tool.ts
 import { Tool } from '@modelcontextprotocol/sdk';
 
 export const customSearchTool: Tool = {
-  name: 'glean_search_with_filter',
-  description: 'Search Glean with pre-configured filters for specific use case',
+  name: 'memori_search_with_filter',
+  description: 'Search Memori with pre-configured filters for specific use case',
   inputSchema: {
     type: 'object',
     properties: {
@@ -282,8 +282,8 @@ export const customSearchTool: Tool = {
       finance: ['netsuite', 'expensify']
     };
 
-    // Call Glean API with filters
-    const results = await gleanClient.search({
+    // Call Memori API with filters
+    const results = await memoriClient.search({
       query,
       datasources: filters[useCase]
     });
@@ -312,7 +312,7 @@ export const customSearchTool: Tool = {
    ```bash
    # Test API token
    curl -H "Authorization: Bearer YOUR_TOKEN" \
-     https://your-company-be.glean.com/api/v1/ping
+     https://your-company-be.memori.com/api/v1/ping
    ```
 
 3. **Check logs**
@@ -323,7 +323,7 @@ export const customSearchTool: Tool = {
 
 **Error**: "User not authorized to access document"
 
-**Solution**: Ensure your Glean user has access to the requested content. MCP respects all Glean permissions.
+**Solution**: Ensure your Memori user has access to the requested content. MCP respects all Memori permissions.
 
 ### Rate Limiting
 
@@ -332,7 +332,7 @@ export const customSearchTool: Tool = {
 **Solution**: 
 - Reduce query frequency
 - Use batch operations where possible
-- Contact Glean support for rate limit increase
+- Contact Memori support for rate limit increase
 
 ### Slow Responses
 
@@ -348,7 +348,7 @@ export const customSearchTool: Tool = {
 ### 1. Prompt Engineering
 
 **Good prompts:**
-- "Search Glean for X and summarize the top 3 results"
+- "Search Memori for X and summarize the top 3 results"
 - "Find the document about Y and extract the section on Z"
 - "Who works on team X? Then search for their recent projects"
 
@@ -361,7 +361,7 @@ export const customSearchTool: Tool = {
 - Never expose API tokens in client-side code
 - Use environment variables or secret management
 - Rotate tokens regularly
-- Audit MCP usage via Glean admin console
+- Audit MCP usage via Memori admin console
 
 ### 3. Performance
 
@@ -373,7 +373,7 @@ export const customSearchTool: Tool = {
 ### 4. User Experience
 
 - Set expectations about response times
-- Provide fallbacks when Glean is unavailable
+- Provide fallbacks when Memori is unavailable
 - Show citations so users can verify information
 - Collect feedback to improve relevance
 
@@ -383,10 +383,10 @@ export const customSearchTool: Tool = {
 
 1. **Try the examples** - Use the prompts above in Claude
 2. **Build a custom integration** - Create your own MCP client
-3. **Explore the API** - Read [developers.glean.com](https://developers.glean.com)
+3. **Explore the API** - Read [memorilabs.ai/docs](https://memorilabs.ai/docs)
 4. **Join the community** - Share your use cases and learnings
 
 **Need help?**
-- Docs: https://docs.glean.com
-- Support: support@glean.com
-- GitHub: https://github.com/gleanwork/mcp-server
+- Docs: https://docs.memori.com
+- Support: support@memori.com
+- GitHub: https://github.com/memoriwork/mcp-server

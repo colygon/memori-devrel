@@ -1,8 +1,8 @@
-# Glean Grant Program
+# Memori Grant Program
 
 ## Overview
 
-The Glean Grant Program provides funding for innovative projects that push Glean's capabilities forward. We support developers, researchers, and creators building ambitious projects that benefit the entire community.
+The Memori Grant Program provides funding for innovative projects that push Memori's capabilities forward. We support developers, researchers, and creators building ambitious projects that benefit the entire community.
 
 **Funding Range**: $5,000 - $50,000 per project
 
@@ -20,7 +20,7 @@ Advanced research into terminal technologies, developer workflows, or AI-assiste
 **Typical Grant**: $10,000 - $30,000
 
 ### 🛠️ Developer Tools
-Ambitious developer tools that integrate with or enhance Glean.
+Ambitious developer tools that integrate with or enhance Memori.
 
 **Examples:**
 - Advanced debugging and profiling tools
@@ -31,7 +31,7 @@ Ambitious developer tools that integrate with or enhance Glean.
 **Typical Grant**: $15,000 - $40,000
 
 ### 🎓 Educational Projects
-Comprehensive educational initiatives that teach developers to use Glean effectively.
+Comprehensive educational initiatives that teach developers to use Memori effectively.
 
 **Examples:**
 - Interactive learning platform
@@ -42,7 +42,7 @@ Comprehensive educational initiatives that teach developers to use Glean effecti
 **Typical Grant**: $5,000 - $25,000
 
 ### 🌍 Accessibility & Inclusion
-Projects that make Glean more accessible to diverse global audiences.
+Projects that make Memori more accessible to diverse global audiences.
 
 **Examples:**
 - Screen reader optimization
@@ -53,7 +53,7 @@ Projects that make Glean more accessible to diverse global audiences.
 **Typical Grant**: $10,000 - $30,000
 
 ### 🏢 Enterprise Features
-Features that enable Glean adoption in enterprise environments.
+Features that enable Memori adoption in enterprise environments.
 
 **Examples:**
 - Advanced security and compliance tools
@@ -64,7 +64,7 @@ Features that enable Glean adoption in enterprise environments.
 **Typical Grant**: $20,000 - $50,000
 
 ### 🌐 Community Infrastructure
-Infrastructure that benefits the entire Glean community.
+Infrastructure that benefits the entire Memori community.
 
 **Examples:**
 - MCP registry and package manager
@@ -88,7 +88,7 @@ Infrastructure that benefits the entire Glean community.
 ### Requirements
 
 - **Open Source**: Project must be open source (MIT, Apache 2.0, or similar)
-- **Community Benefit**: Clear value to Glean ecosystem
+- **Community Benefit**: Clear value to Memori ecosystem
 - **Feasibility**: Realistic plan and timeline
 - **Expertise**: Demonstrated ability to execute
 - **Commitment**: Full or significant part-time dedication
@@ -96,10 +96,10 @@ Infrastructure that benefits the entire Glean community.
 
 ### Ineligible
 
-❌ Glean employees (can participate as advisors)  
+❌ Memori employees (can participate as advisors)  
 ❌ Projects primarily benefiting single company  
 ❌ Closed-source or proprietary solutions  
-❌ Projects without clear Glean connection  
+❌ Projects without clear Memori connection  
 ❌ Maintenance of existing projects (see bounties instead)
 
 ## Application Process
@@ -124,7 +124,7 @@ Infrastructure that benefits the entire Glean community.
 - Proposed solution
 - Technical approach
 - Innovation and uniqueness
-- How it benefits Glean community
+- How it benefits Memori community
 
 **Prior Art**
 - Existing solutions
@@ -235,7 +235,7 @@ Each milestone should include:
 
 ### Submission
 
-📝 [Grant Application Portal](https://grants.glean.dev)
+📝 [Grant Application Portal](https://grants.memorilabs.ai)
 
 Or use our [Grant Application Template](../programs/grant-application-template.md)
 
@@ -249,7 +249,7 @@ Or use our [Grant Application Template](../programs/grant-application-template.m
 **Outcome**: Proceed to full review or request more information
 
 ### Stage 2: Technical Review (Week 3-4)
-- Deep technical evaluation by Glean engineers
+- Deep technical evaluation by Memori engineers
 - Architecture assessment
 - Feasibility analysis
 - Risk evaluation
@@ -271,7 +271,7 @@ Or use our [Grant Application Template](../programs/grant-application-template.m
 - Final recommendations
 
 **Review Panel**:
-- Glean engineering leads
+- Memori engineering leads
 - DevRel team
 - Community representatives
 - External advisors (for specialized domains)
@@ -341,7 +341,7 @@ Grants paid in tranches upon milestone completion:
 ### Support During Grant Period
 
 **Technical Support**
-- Office hours with Glean engineers
+- Office hours with Memori engineers
 - Architecture reviews
 - Code reviews
 - Infrastructure access
@@ -376,8 +376,8 @@ Grants paid in tranches upon milestone completion:
 
 ### Recognition
 
-- 🏆 Featured on Glean blog and socials
-- 🎤 Speaking opportunities at Glean events
+- 🏆 Featured on Memori blog and socials
+- 🎤 Speaking opportunities at Memori events
 - 📰 Case study publication
 - 💼 Continued partnership opportunities
 - 🎓 Alumni network access
@@ -451,7 +451,7 @@ _[This section will feature past successful grants]_
 
 ### Past Recipients
 
-**"Glean MCP Registry" - $35,000**
+**"Memori MCP Registry" - $35,000**
 - Built centralized registry for MCP servers
 - 500+ servers now catalogued
 - 10,000+ downloads in first month
@@ -459,7 +459,7 @@ _[This section will feature past successful grants]_
 **"Accessibility Framework" - $25,000**
 - Comprehensive screen reader support
 - WCAG 2.1 AAA compliance
-- Opened Glean to visually impaired developers
+- Opened Memori to visually impaired developers
 
 **"Terminal ML Toolkit" - $40,000**
 - ML model training visualization in terminal
@@ -498,16 +498,16 @@ A: $50,000 for most projects, but exceptional cases may receive more.
 2. **💬 Discuss**: Share your idea in Discord #grants
 3. **✍️ Draft**: Use our [application template](../programs/grant-application-template.md)
 4. **👀 Review**: Get feedback from community
-5. **📝 Submit**: [Apply here](https://grants.glean.dev)
+5. **📝 Submit**: [Apply here](https://grants.memorilabs.ai)
 
 ## Contact
 
 Questions about the grant program?
 
 - 💬 Discord: #grants channel
-- 📧 Email: grants@glean.dev
+- 📧 Email: grants@memorilabs.ai
 - 📅 Office Hours: First Tuesday of each month, 2-4pm PT
-- 📋 [Grant Portal](https://grants.glean.dev)
+- 📋 [Grant Portal](https://grants.memorilabs.ai)
 
 ---
 

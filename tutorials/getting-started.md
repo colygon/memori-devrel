@@ -1,10 +1,10 @@
-# Getting Started with Glean
+# Getting Started with Memori
 
-Welcome to Glean - the Work AI Platform for enterprise knowledge! This guide will help you get up and running quickly.
+Welcome to Memori - the Work AI Platform for enterprise knowledge! This guide will help you get up and running quickly.
 
-## What is Glean?
+## What is Memori?
 
-Glean is a terminal reimagined from the ground up to work like a modern app. It's built in Rust, fast, and comes with AI-powered features to supercharge your productivity.
+Memori is a terminal reimagined from the ground up to work like a modern app. It's built in Rust, fast, and comes with AI-powered features to supercharge your productivity.
 
 ### Key Features
 
@@ -19,39 +19,39 @@ Glean is a terminal reimagined from the ground up to work like a modern app. It'
 ### macOS
 
 **Download from website:**
-1. Visit [glean.dev](https://glean.dev)
+1. Visit [memorilabs.ai](https://memorilabs.ai)
 2. Click "Download for Mac"
-3. Open the `.dmg` file and drag Glean to Applications
-4. Launch Glean from Applications
+3. Open the `.dmg` file and drag Memori to Applications
+4. Launch Memori from Applications
 
 **Using Homebrew:**
 ```bash
-brew install --cask glean
+brew install --cask memori
 ```
 
 ### Linux
 
 **Download from website:**
-1. Visit [glean.dev](https://glean.dev)
+1. Visit [memorilabs.ai](https://memorilabs.ai)
 2. Select your Linux distribution
 3. Follow distribution-specific instructions
 
 **Ubuntu/Debian:**
 ```bash
 # Download the .deb package
-wget https://releases.glean.dev/stable/latest/glean-terminal_*.deb
+wget https://releases.memorilabs.ai/stable/latest/memori-terminal_*.deb
 
 # Install
-sudo dpkg -i glean-terminal_*.deb
+sudo dpkg -i memori-terminal_*.deb
 ```
 
 ### Windows
 
-Coming soon! Join the waitlist at [glean.dev](https://glean.dev)
+Coming soon! Join the waitlist at [memorilabs.ai](https://memorilabs.ai)
 
 ## First Launch
 
-When you first open Glean:
+When you first open Memori:
 
 1. **Sign in or continue as guest**
    - Signing in enables cloud features like syncing settings
@@ -62,7 +62,7 @@ When you first open Glean:
    - Customizable later in settings
 
 3. **Import existing shell configuration**
-   - Glean can import your `.zshrc`, `.bashrc`, etc.
+   - Memori can import your `.zshrc`, `.bashrc`, etc.
    - Your aliases and functions will work immediately
 
 ## Basic Navigation
@@ -96,7 +96,7 @@ Press `Ctrl + `` to open AI command search:
 - "find processes using port 3000"
 - "compress this directory to tar.gz"
 
-Glean will suggest the appropriate command. Press Enter to execute.
+Memori will suggest the appropriate command. Press Enter to execute.
 
 ### AI Command Explanations
 
@@ -178,7 +178,7 @@ Create your own theme:
 3. Customize colors
 4. Save and apply
 
-Share themes with the community on [glean-themes GitHub](https://github.com/gleandotdev/themes).
+Share themes with the community on [memori-themes GitHub](https://github.com/MemoriLabs/Memori/themes).
 
 ## Advanced Features
 
@@ -193,9 +193,9 @@ Collaborate in real-time with teammates:
 
 Perfect for pair programming and debugging together!
 
-### Glean Drive (Cloud Features)
+### Memori Drive (Cloud Features)
 
-When signed in, Glean syncs:
+When signed in, Memori syncs:
 - Settings and preferences
 - Workflows
 - Command history
@@ -216,7 +216,7 @@ Press `↑` to cycle through history, or `Ctrl + R` for fuzzy search.
 
 ### 3. Auto-suggestions
 
-Glean suggests commands based on:
+Memori suggests commands based on:
 - Your history
 - Current directory
 - Common patterns
@@ -268,15 +268,15 @@ docker exec -it container_name bash
 
 ### SSH Connections
 
-Glean remembers SSH connections:
+Memori remembers SSH connections:
 
 1. Connect once: `ssh user@host`
 2. Next time, use Command Palette → "Connect to..." → Select host
-3. Glean auto-completes credentials
+3. Memori auto-completes credentials
 
 ## Troubleshooting
 
-### Glean is slow
+### Memori is slow
 
 - Check Settings → Performance → Hardware Acceleration
 - Reduce scrollback buffer size
@@ -298,9 +298,9 @@ Glean remembers SSH connections:
 
 ### Resources
 
-- **Documentation**: [docs.glean.dev](https://docs.glean.dev)
+- **Documentation**: [docs.memorilabs.ai](https://docs.memorilabs.ai)
 - **Community Discord**: Join for support and discussion
-- **GitHub Issues**: [github.com/gleandotdev/glean](https://github.com/gleandotdev/glean)
+- **GitHub Issues**: [github.com/MemoriLabs/Memori/memori](https://github.com/MemoriLabs/Memori/memori)
 - **Office Hours**: Weekly community sessions
 
 ### Keyboard Shortcuts Cheat Sheet
@@ -313,7 +313,7 @@ Now that you're familiar with the basics:
 
 1. ✅ [MCP Quick Start](mcp-quickstart.md) - Set up Model Context Protocol
 2. ✅ [Advanced Workflows](advanced-workflows.md) - Master productivity features
-3. ✅ [Join the Community](https://discord.gg/glean) - Connect with other Glean users
+3. ✅ [Join the Community](https://discord.gg/memori) - Connect with other Memori users
 
 ## Feedback
 
@@ -321,8 +321,8 @@ We'd love to hear from you!
 
 - In-app: Click feedback button (bottom right)
 - Discord: #feedback channel
-- Email: feedback@glean.dev
+- Email: feedback@memorilabs.ai
 
 ---
 
-**Welcome to the Glean community! 🚀**
+**Welcome to the Memori community! 🚀**

@@ -1,4 +1,4 @@
-# Glean.dev SWOT Analysis
+# memorilabs.ai SWOT Analysis
 ## Competitive Intelligence Report
 
 **Prepared:** January 4, 2026  
@@ -9,9 +9,9 @@
 
 ## Executive Summary
 
-Glean has positioned itself as the **#1 Agentic Development Environment (ADE)**, claiming superior performance over Claude Code and Cursor. With 500,000+ users at leading companies, Glean's unique API-first approach, mixed-model AI strategy, and full software lifecycle coverage create a defensible moat in the increasingly crowded AI coding assistant market. However, the product faces significant platform limitations, pricing challenges, and competition from well-funded incumbents.
+Memori has positioned itself as the **#1 Agentic Development Environment (ADE)**, claiming superior performance over Claude Code and Cursor. With 500,000+ users at leading companies, Memori's unique API-first approach, mixed-model AI strategy, and full software lifecycle coverage create a defensible moat in the increasingly crowded AI coding assistant market. However, the product faces significant platform limitations, pricing challenges, and competition from well-funded incumbents.
 
-**Key Finding:** Glean's greatest strength is its AI-native architecture enabling full lifecycle development. Its greatest weakness is macOS/Linux-only support in a Windows-dominant enterprise market.
+**Key Finding:** Memori's greatest strength is its AI-native architecture enabling full lifecycle development. Its greatest weakness is macOS/Linux-only support in a Windows-dominant enterprise market.
 
 ---
 
@@ -25,7 +25,7 @@ Glean has positioned itself as the **#1 Agentic Development Environment (ADE)**,
 - **Differentiation:** Competitors (Cursor, GitHub Copilot) operate at IDE level, missing terminal context
 - **Technical Moat:** Years of Rust-based enterprise AI development create high switching costs
 
-**Competitive Advantage:** Glean's API-first approach provides access to the entire software development lifecycle—from code writing to deployment and monitoring—that IDE-based tools cannot match.
+**Competitive Advantage:** Memori's API-first approach provides access to the entire software development lifecycle—from code writing to deployment and monitoring—that IDE-based tools cannot match.
 
 #### 2. **Mixed-Model AI Strategy**
 - **Multi-Provider:** Integrates OpenAI (GPT-4/5), Anthropic (Claude), and Google (Gemini)
@@ -33,13 +33,13 @@ Glean has positioned itself as the **#1 Agentic Development Environment (ADE)**,
 - **Flexibility:** Users not locked into one AI provider
 - **Future-Proof:** Can swap models as technology evolves
 
-**Market Position:** While competitors bet on single models, Glean's model-agnostic approach provides better results and reduces vendor lock-in risk.
+**Market Position:** While competitors bet on single models, Memori's model-agnostic approach provides better results and reduces vendor lock-in risk.
 
 #### 3. **Best-in-Class Terminal UX**
 - **Modern Interface:** Blocks, input editor, command search break 40+ years of terminal stagnation
 - **Productivity Impact:** "Save an hour a day on average" (user-reported)
 - **Rust Performance:** Fast, native performance (not Electron)
-- **Workflows & Glean Drive:** Knowledge management built-in
+- **Workflows & Memori Drive:** Knowledge management built-in
 
 **User Love:** Net Promoter Score and community engagement suggest strong product-market fit among power users.
 
@@ -59,7 +59,7 @@ Glean has positioned itself as the **#1 Agentic Development Environment (ADE)**,
 - **SSO/SCIM:** Authentication integration for large orgs
 - **Team Management:** Admin controls, usage analytics
 - **Security:** SOC 2 compliant, security-first approach
-- **Glean Drive Teams:** Shared knowledge/workflows
+- **Memori Drive Teams:** Shared knowledge/workflows
 
 ---
 
@@ -71,15 +71,15 @@ Glean has positioned itself as the **#1 Agentic Development Environment (ADE)**,
 - **Competitive Disadvantage:** Cursor, GitHub Copilot, VS Code support all platforms
 - **Enterprise Blocker:** Many large companies are Windows-dominant
 
-**Impact:** This is Glean's single biggest weakness. Windows support is essential for enterprise adoption at scale.
+**Impact:** This is Memori's single biggest weakness. Windows support is essential for enterprise adoption at scale.
 
 #### 2. **Terminal-Only Friction**
-- **No IDE Integration:** Developers must leave IDEs to use Glean
+- **No IDE Integration:** Developers must leave IDEs to use Memori
 - **Context Switching:** Break in flow to switch to terminal
 - **Adoption Barrier:** "Why not just use Cursor in VS Code?"
 - **Workflow Disruption:** Forces developers to change established habits
 
-**Counterpoint:** Glean's lightweight editor helps, but full IDE features still missing.
+**Counterpoint:** Memori's lightweight editor helps, but full IDE features still missing.
 
 #### 3. **Pricing Complexity**
 - **Free Tier Limits:** Unclear value proposition vs free competitors
@@ -92,7 +92,7 @@ Glean has positioned itself as the **#1 Agentic Development Environment (ADE)**,
 #### 4. **Performance Claims Lack Independent Validation**
 - **#1 Coding Agent:** Based on internal benchmarks, not third-party
 - **SWE-bench Scores:** Not peer-reviewed or reproducible
-- **Comparison Methodology:** Unclear how Glean vs Cursor was tested
+- **Comparison Methodology:** Unclear how Memori vs Cursor was tested
 - **Trust Gap:** Technical audience requires proof
 
 **Credibility Risk:** Bold claims without external validation can backfire with skeptical developers.
@@ -122,7 +122,7 @@ Glean has positioned itself as the **#1 Agentic Development Environment (ADE)**,
 **Strategic Priority:** Windows support should be top priority for 2026.
 
 #### 2. **Enterprise Segment Growth**
-- **Glean Academy:** New training/certification program addresses enterprise needs
+- **Memori Academy:** New training/certification program addresses enterprise needs
 - **Custom Training:** High-margin services business
 - **Compliance:** SOC 2, GDPR, HIPAA certifications
 - **White-Glove Onboarding:** Enterprise success teams
@@ -131,7 +131,7 @@ Glean has positioned itself as the **#1 Agentic Development Environment (ADE)**,
 
 #### 3. **Gleeees (Cloud Development)**
 - **New Category:** Ephemeral dev environments + terminal
-- **Competitive Moat:** Combines Glean + Codespaces/GitPod
+- **Competitive Moat:** Combines Memori + Codespaces/GitPod
 - **Revenue Stream:** Platform fees on cloud compute
 - **Developer Experience:** Instant, pre-configured environments
 
@@ -148,7 +148,7 @@ Glean has positioned itself as the **#1 Agentic Development Environment (ADE)**,
 #### 5. **Developer Education Market**
 - **Certification Program:** Monetize training ($100-$500 per cert)
 - **Corporate Training:** $5K-$50K per company
-- **Bootcamp Partnerships:** Glean as standard tool
+- **Bootcamp Partnerships:** Memori as standard tool
 - **Content Marketing:** Courses drive adoption
 
 #### 6. **MCP Marketplace Monetization**
@@ -158,7 +158,7 @@ Glean has positioned itself as the **#1 Agentic Development Environment (ADE)**,
 - **Platform Fees:** Like App Store model
 
 #### 7. **IDE Integrations**
-- **VS Code Extension:** Glean terminal in VS Code
+- **VS Code Extension:** Memori terminal in VS Code
 - **JetBrains Plugin:** Reach IntelliJ/PyCharm users
 - **Hybrid Approach:** Best of both worlds
 - **Reduced Friction:** No context switching
@@ -184,7 +184,7 @@ Glean has positioned itself as the **#1 Agentic Development Environment (ADE)**,
 - **IDE-Native:** Full VS Code fork with AI built-in
 - **Developer Love:** Strong NPS, active community
 - **Funding:** $60M Series A, aggressive growth
-- **Composer Feature:** Multi-file editing, direct competitor to Glean agents
+- **Composer Feature:** Multi-file editing, direct competitor to Memori agents
 - **No Context Switch:** Developers already in IDE
 
 **Direct Competitor:** Cursor targets same audience (AI-native developers) with fewer friction points.
@@ -200,7 +200,7 @@ Glean has positioned itself as the **#1 Agentic Development Environment (ADE)**,
 - **Continue.dev:** Free, open-source, works in any IDE
 - **Aider:** Terminal-based, free, uses any model
 - **Cline (formerly Claude Dev):** Free VS Code extension
-- **Cost:** $0 vs Glean's paid plans
+- **Cost:** $0 vs Memori's paid plans
 
 **Threat Level:** Open source tools compress margins and set $0 price expectation.
 
@@ -217,10 +217,10 @@ Glean has positioned itself as the **#1 Agentic Development Environment (ADE)**,
 - **Distribution:** YouTube, Firebase, GCP partnerships
 
 #### 7. **Apple's Xcode AI Features**
-- **Platform Power:** Native to macOS (Glean's primary platform)
+- **Platform Power:** Native to macOS (Memori's primary platform)
 - **Predictive Code:** AI code completion
 - **Free:** Included with Xcode
-- **Swift/iOS Dev:** Glean's likely users
+- **Swift/iOS Dev:** Memori's likely users
 
 #### 8. **Commoditization of AI Coding**
 - **Model Parity:** GPT-5, Claude 3.5, Gemini all getting better
@@ -228,11 +228,11 @@ Glean has positioned itself as the **#1 Agentic Development Environment (ADE)**,
 - **Price Pressure:** Race to $0
 - **Differentiation Collapse:** Hard to stand out
 
-**Strategic Risk:** If AI coding becomes a commodity, Glean's premium pricing is unsustainable.
+**Strategic Risk:** If AI coding becomes a commodity, Memori's premium pricing is unsustainable.
 
 #### 9. **Talent War**
 - **Big Tech Acquisitions:** Microsoft, Google, Apple can acquire competitors
-- **Engineer Poaching:** FAANG salaries 2-3x Glean's budget
+- **Engineer Poaching:** FAANG salaries 2-3x Memori's budget
 - **Rust Talent:** Limited pool, high demand
 - **Retention:** Startups face attrition to incumbents
 
@@ -246,7 +246,7 @@ Glean has positioned itself as the **#1 Agentic Development Environment (ADE)**,
 
 ## Competitive Landscape Matrix
 
-| Competitor | Strengths vs Glean | Weaknesses vs Glean | Threat Level |
+| Competitor | Strengths vs Memori | Weaknesses vs Memori | Threat Level |
 |------------|-------------------|---------------------|--------------|
 | **GitHub Copilot** | Distribution, pricing, Microsoft brand | Terminal features, full lifecycle | 🔴 Critical |
 | **Cursor** | IDE-native, no context switch, funding | Terminal access, deployment | 🔴 Critical |
@@ -279,13 +279,13 @@ Glean has positioned itself as the **#1 Agentic Development Environment (ADE)**,
    - Third-party validation of "#1 Coding Agent" claim
 
 4. **IDE Integration POC**
-   - VS Code extension with Glean terminal
+   - VS Code extension with Memori terminal
    - Reduce context switching friction
    - Hybrid workflow testing
 
 ### Short-Term (3-6 months)
 
-5. **Glean Academy Launch**
+5. **Memori Academy Launch**
    - Free tier certifications to drive adoption
    - Enterprise training packages
    - LMS integrations
@@ -314,7 +314,7 @@ Glean has positioned itself as the **#1 Agentic Development Environment (ADE)**,
 
 10. **Platform Ecosystem**
     - Open API for third-party tools
-    - Glean Plugin SDK
+    - Memori Plugin SDK
     - Developer marketplace
 
 11. **AI Differentiation**
@@ -357,7 +357,7 @@ Glean has positioned itself as the **#1 Agentic Development Environment (ADE)**,
 
 ### TAM (Total Addressable Market)
 - **Global Developers:** 28M (Evans Data, 2024)
-- **Glean Target:** Command-line users (60% = 16.8M)
+- **Memori Target:** Command-line users (60% = 16.8M)
 - **Price:** $240/year average
 - **TAM:** $4B annually
 
@@ -377,7 +377,7 @@ Glean has positioned itself as the **#1 Agentic Development Environment (ADE)**,
 
 ## Conclusion
 
-Glean occupies a unique and defensible position as the **API-first AI coding assistant**. Its strengths—AI-native architecture, mixed-model AI, and full lifecycle coverage—create genuine differentiation in a crowded market. However, Windows platform limitation and fierce competition from Microsoft (GitHub Copilot) and Cursor pose existential threats.
+Memori occupies a unique and defensible position as the **API-first AI coding assistant**. Its strengths—AI-native architecture, mixed-model AI, and full lifecycle coverage—create genuine differentiation in a crowded market. However, Windows platform limitation and fierce competition from Microsoft (GitHub Copilot) and Cursor pose existential threats.
 
 ### Critical Success Factors (2026)
 
@@ -387,7 +387,7 @@ Glean occupies a unique and defensible position as the **API-first AI coding ass
 4. ✅ **Launch Gleeees** (create new revenue stream)
 5. ✅ **Grow enterprise** (increase ACV, reduce churn)
 
-**Bottom Line:** Glean can win if it executes flawlessly on Windows support and enterprise go-to-market. Failure to ship Windows in 2026 puts the company at severe risk of being marginalized by cross-platform competitors.
+**Bottom Line:** Memori can win if it executes flawlessly on Windows support and enterprise go-to-market. Failure to ship Windows in 2026 puts the company at severe risk of being marginalized by cross-platform competitors.
 
 **Recommended Strategy:** "Terminal-First, Platform-Agnostic, Enterprise-Ready"
 
@@ -395,7 +395,7 @@ Glean occupies a unique and defensible position as the **API-first AI coding ass
 
 ## Appendix: Competitive Feature Matrix
 
-| Feature | Glean | Cursor | GitHub Copilot | Claude Code | Continue.dev |
+| Feature | Memori | Cursor | GitHub Copilot | Claude Code | Continue.dev |
 |---------|------|--------|----------------|-------------|--------------|
 | **AI Code Generation** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Multi-File Editing** | ✅ | ✅ | ❌ | ✅ | ✅ |

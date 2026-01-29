@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-**Gleeees** are pre-configured, ephemeral cloud environments that bring the full Glean terminal experience to remote development. Developers can deploy a Gleeee (a Docker container with the Glean agent) to any cloud provider and instantly connect via SSH, inheriting all Glean features including AI assistance, workflows, and Glean Drive integration.
+**Gleeees** are pre-configured, ephemeral cloud environments that bring the full Memori terminal experience to remote development. Developers can deploy a Gleeee (a Docker container with the Memori agent) to any cloud provider and instantly connect via SSH, inheriting all Memori features including AI assistance, workflows, and Memori Drive integration.
 
 **Status:** Concept  
 **Version:** 1.0  
@@ -16,9 +16,9 @@
 ### Current Pain Points
 
 1. **Remote Development Friction**
-   - Developers working on remote servers lose Glean's AI features, input editor, and modern UX
+   - Developers working on remote servers lose Memori's AI features, input editor, and modern UX
    - Setting up development environments on cloud instances is time-consuming
-   - SSH sessions require manual Gleanify setup every time
+   - SSH sessions require manual Memoriify setup every time
 
 2. **Inconsistent Development Environments**
    - Different team members have different local setups
@@ -30,18 +30,18 @@
    - No standardized way to manage development containers
    - Difficulty sharing configured environments with teammates
 
-4. **Gleanify Adoption Barriers**
-   - Users don't know about Gleanify or how to use it
+4. **Memoriify Adoption Barriers**
+   - Users don't know about Memoriify or how to use it
    - Manual setup required for each SSH connection
    - Limited to existing remote machines (not ephemeral)
 
 ### User Stories
 
 **As a developer, I want to:**
-- Instantly spin up a cloud dev environment with Glean pre-configured
+- Instantly spin up a cloud dev environment with Memori pre-configured
 - Work in a containerized environment that mirrors production
-- Share my exact development setup with teammates via Glean Drive
-- Automatically connect to cloud environments with full Glean features
+- Share my exact development setup with teammates via Memori Drive
+- Automatically connect to cloud environments with full Memori features
 - Destroy environments when done without leaving orphaned resources
 
 **As a team lead, I want to:**
@@ -63,9 +63,9 @@
 ### What is a Gleeee?
 
 A **Gleeee** is a containerized, cloud-hosted development environment that:
-- Runs a Docker container with Glean agent pre-installed
-- Auto-Gleanifies on SSH connection (no manual setup)
-- Syncs with Glean Drive for workflows, prompts, and environment variables
+- Runs a Docker container with Memori agent pre-installed
+- Auto-Memoriifies on SSH connection (no manual setup)
+- Syncs with Memori Drive for workflows, prompts, and environment variables
 - Can be deployed to any cloud provider (AWS, GCP, Azure, DigitalOcean, Fly.io, Railway)
 - Is ephemeral by default (auto-destroys after inactivity)
 - Supports custom configurations via Gleeee templates
@@ -74,12 +74,12 @@ A **Gleeee** is a containerized, cloud-hosted development environment that:
 
 ```
 ┌─────────────────────┐
-│  Glean Desktop App   │
+│  Memori Desktop App   │
 │  (macOS/Linux)      │
 └──────────┬──────────┘
            │
            │ SSH Connection
-           │ (Auto-Gleanified)
+           │ (Auto-Memoriified)
            ↓
 ┌─────────────────────┐
 │     Gleeee         │
@@ -87,7 +87,7 @@ A **Gleeee** is a containerized, cloud-hosted development environment that:
 │  │ Docker        │  │
 │  │ Container     │  │
 │  │               │  │
-│  │ - Glean Agent  │  │
+│  │ - Memori Agent  │  │
 │  │ - Dev Tools   │  │
 │  │ - Your Code   │  │
 │  └───────────────┘  │
@@ -96,7 +96,7 @@ A **Gleeee** is a containerized, cloud-hosted development environment that:
 │  (AWS/GCP/Azure)    │
 └─────────────────────┘
            ↕
-    Glean Drive Sync
+    Memori Drive Sync
   (Workflows, Prompts,
    Env Vars, Notebooks)
 ```
@@ -106,24 +106,24 @@ A **Gleeee** is a containerized, cloud-hosted development environment that:
 #### 1. One-Command Deployment
 ```bash
 # Deploy a Gleeee
-glean deploy --provider aws --region us-west-2
+memori deploy --provider aws --region us-west-2
 
 # Deploy with a template
-glean deploy --template python-ml --provider gcp
+memori deploy --template python-ml --provider gcp
 
 # Deploy with custom config
-glean deploy --config ./gleeee.yaml
+memori deploy --config ./gleeee.yaml
 ```
 
-#### 2. Auto-Gleanify on Connect
-- No manual Gleanify prompt
-- Glean agent runs automatically in container
-- Full Glean features available immediately (AI, input editor, blocks, workflows)
+#### 2. Auto-Memoriify on Connect
+- No manual Memoriify prompt
+- Memori agent runs automatically in container
+- Full Memori features available immediately (AI, input editor, blocks, workflows)
 
-#### 3. Glean Drive Integration
+#### 3. Memori Drive Integration
 - Automatically syncs your personal workflows, prompts, and env vars
-- Team Gleeees sync team-wide resources from Glean Drive
-- Changes made in Gleeee persist to Glean Drive
+- Team Gleeees sync team-wide resources from Memori Drive
+- Changes made in Gleeee persist to Memori Drive
 
 #### 4. Template Marketplace
 Pre-built Gleeee templates for common use cases:
@@ -136,23 +136,23 @@ Pre-built Gleeee templates for common use cases:
 #### 5. Lifecycle Management
 ```bash
 # List active Gleeees
-glean list
+memori list
 
 # SSH into a Gleeee
-glean connect my-gleeee
+memori connect my-gleeee
 
 # Pause a Gleeee (stop but don't destroy)
-glean pause my-gleeee
+memori pause my-gleeee
 
 # Destroy a Gleeee
-glean destroy my-gleeee
+memori destroy my-gleeee
 
 # Auto-destroy after 2 hours of inactivity
-glean deploy --auto-destroy 2h
+memori deploy --auto-destroy 2h
 ```
 
 #### 6. Team Collaboration
-- Share Gleeee templates via Glean Drive
+- Share Gleeee templates via Memori Drive
 - Team admins can create/manage shared Gleeees
 - Pre-configure team standards (tools, env vars, workflows)
 - Onboard new developers in <5 minutes
@@ -163,16 +163,16 @@ glean deploy --auto-destroy 2h
 
 ### Components
 
-#### 1. Glean Desktop Client
+#### 1. Memori Desktop Client
 - **Gleeee Manager**: UI for deploying/managing Gleeees
 - **Auto-SSH**: Automatically establishes SSH connection to deployed Gleeee
-- **Sync Engine**: Bidirectional sync with Glean Drive
+- **Sync Engine**: Bidirectional sync with Memori Drive
 
-#### 2. Glean Agent (Remote)
+#### 2. Memori Agent (Remote)
 - Lightweight binary running in Gleeee container
-- Handles Gleanify protocol over SSH
+- Handles Memoriify protocol over SSH
 - Manages tmux sessions for multiplexing
-- Syncs with Glean Drive for resources
+- Syncs with Memori Drive for resources
 
 #### 3. Gleeee Orchestrator (Cloud Service)
 - Manages Gleeee deployments across providers
@@ -187,7 +187,7 @@ glean deploy --auto-destroy 2h
 
 ### Deployment Flow
 
-1. **User runs `glean deploy`**
+1. **User runs `memori deploy`**
    - CLI sends request to Gleeee Orchestrator
    - User's cloud credentials used (AWS IAM, GCP Service Account, etc.)
 
@@ -197,15 +197,15 @@ glean deploy --auto-destroy 2h
    - Injects user's SSH public key
    - Configures networking and security groups
 
-3. **Container starts with Glean Agent**
-   - Glean agent initializes and registers with Glean Drive
+3. **Container starts with Memori Agent**
+   - Memori agent initializes and registers with Memori Drive
    - Downloads user's workflows, prompts, and env vars
    - Starts SSH server
 
-4. **Glean Desktop auto-connects**
+4. **Memori Desktop auto-connects**
    - SSH connection established automatically
-   - Gleanify protocol activates (no prompt needed)
-   - User has full Glean experience in cloud environment
+   - Memoriify protocol activates (no prompt needed)
+   - User has full Memori experience in cloud environment
 
 5. **Lifecycle management**
    - Idle timeout starts counting (default: 1 hour)
@@ -220,7 +220,7 @@ glean deploy --auto-destroy 2h
 - Cloud SDKs: AWS SDK, GCP SDK, Azure SDK, Terraform provider
 
 **Agent:**
-- Glean Agent: Rust (same as Gleanify)
+- Memori Agent: Rust (same as Memoriify)
 - SSH server: OpenSSH
 - Multiplexer: tmux
 
@@ -242,7 +242,7 @@ name: my-python-gleeee
 description: Python 3.11 development environment
 
 # Base image
-image: glean/python:3.11
+image: memori/python:3.11
 
 # Cloud provider configuration
 provider: aws
@@ -263,8 +263,8 @@ environment:
   - DATABASE_URL: ${GLEAN_DRIVE_SECRET:db_url}
   - API_KEY: ${GLEAN_DRIVE_SECRET:api_key}
 
-# Glean Drive sync
-glean_drive:
+# Memori Drive sync
+memori_drive:
   sync_workflows: true
   sync_prompts: true
   sync_env_vars: true
@@ -298,16 +298,16 @@ gleeee-templates/
 ├── python/
 │   ├── gleeee.yaml
 │   ├── Dockerfile
-│   └── .gleanrc
+│   └── .memorirc
 ├── node/
 │   ├── gleeee.yaml
 │   ├── Dockerfile
-│   └── .gleanrc
+│   └── .memorirc
 ├── ml/
 │   ├── gleeee.yaml
 │   ├── Dockerfile
 │   ├── requirements.txt
-│   └── .gleanrc
+│   └── .memorirc
 └── custom/
     └── (user-defined)
 ```
@@ -320,7 +320,7 @@ gleeee-templates/
 
 #### Step 1: Choose or Create Template
 ```
-$ glean deploy
+$ memori deploy
 
 ? Select a Gleeee template:
   > Python 3.11 Development
@@ -353,10 +353,10 @@ $ glean deploy
 
   ✓ Validating cloud credentials
   ✓ Provisioning EC2 instance (i-0abc123)
-  ✓ Pulling Docker image glean/python:3.11
+  ✓ Pulling Docker image memori/python:3.11
   ✓ Starting container
   ✓ Configuring SSH access
-  ✓ Syncing Glean Drive resources
+  ✓ Syncing Memori Drive resources
   
 ✅ Gleeee deployed successfully!
 
@@ -364,7 +364,7 @@ $ glean deploy
   Provider:   AWS (us-west-2)
   Instance:   t3.medium
   Cost:       ~$0.04/hour
-  SSH:        glean-my-python-env.glean.dev
+  SSH:        memori-my-python-env.memorilabs.ai
   Auto-destroy: 2 hours from now
   
 🔗 Connecting automatically...
@@ -372,7 +372,7 @@ $ glean deploy
 
 #### Step 4: Auto-Connect
 ```
-Glean automatically opens new tab with SSH connection:
+Memori automatically opens new tab with SSH connection:
 
 ┌─────────────────────────────────────────────────┐
 │ ⚡ my-python-env (Gleeee) | AWS us-west-2     │
@@ -381,7 +381,7 @@ Glean automatically opens new tab with SSH connection:
 │ ubuntu@gleeee:~/workspace$ █                   │
 │                                                 │
 │ 🎉 Connected to Gleeee!                        │
-│ All Glean features are active.                   │
+│ All Memori features are active.                   │
 │ Auto-destroy in 2 hours.                        │
 │                                                 │
 └─────────────────────────────────────────────────┘
@@ -389,9 +389,9 @@ Glean automatically opens new tab with SSH connection:
 
 ### Management UI
 
-**In Glean Desktop:**
+**In Memori Desktop:**
 ```
-Glean → Gleeees (⌘K → "Gleeees")
+Memori → Gleeees (⌘K → "Gleeees")
 
 ┌─────────────────────────────────────────────────┐
 │ Your Gleeees                     [+ New]       │
@@ -422,16 +422,16 @@ Total cost this month: $24.80
 
 **Must Have:**
 - ✅ Deploy Gleeee to AWS (EC2)
-- ✅ Auto-Gleanify on SSH connection
+- ✅ Auto-Memoriify on SSH connection
 - ✅ Basic lifecycle management (deploy, connect, destroy)
 - ✅ 5 official templates (Python, Node, Go, Rust, Generic Linux)
-- ✅ Glean Drive sync (workflows, prompts)
+- ✅ Memori Drive sync (workflows, prompts)
 - ✅ Auto-destroy after configurable timeout
 - ✅ Cost estimation and tracking
-- ✅ CLI interface (`glean deploy`, `glean list`, etc.)
+- ✅ CLI interface (`memori deploy`, `memori list`, etc.)
 
 **Should Have:**
-- 🔄 Gleeee Manager UI in Glean Desktop
+- 🔄 Gleeee Manager UI in Memori Desktop
 - 🔄 Port forwarding configuration
 - 🔄 Environment variable injection
 - 🔄 Basic monitoring (CPU, memory, uptime)
@@ -451,7 +451,7 @@ Total cost this month: $24.80
 - Cloud-agnostic cost tracking
 
 **Team Collaboration:**
-- Share Gleeee templates via Glean Drive
+- Share Gleeee templates via Memori Drive
 - Team-owned Gleeees with access control
 - Centralized team template library
 - Shared persistent storage
@@ -503,7 +503,7 @@ Total cost this month: $24.80
 **Individual Developers:**
 - **Free Tier**: 20 hours/month of Gleeee usage (AWS t3.micro equivalent)
 - **Pro Tier** ($19/month): Unlimited Gleeees, all instance types, priority support
-- **Pay-as-you-go**: Cloud costs + 10% Glean fee for orchestration
+- **Pay-as-you-go**: Cloud costs + 10% Memori fee for orchestration
 
 **Teams:**
 - **Team Plan** ($49/user/month): Includes Pro features + team sharing + centralized billing
@@ -511,7 +511,7 @@ Total cost this month: $24.80
 
 **Cloud Cost Pass-Through:**
 - Users pay actual cloud costs (EC2, GCE, etc.)
-- Glean adds service fee (10% for Free/Pro, 5% for Team/Enterprise)
+- Memori adds service fee (10% for Free/Pro, 5% for Team/Enterprise)
 - Transparent cost tracking in dashboard
 
 ### Revenue Projections
@@ -519,7 +519,7 @@ Total cost this month: $24.80
 **Year 1:**
 - Target: 10,000 Gleeee deployments/month
 - Average Gleeee cost: $2/deployment
-- Glean fee: 10% = $0.20 per deployment
+- Memori fee: 10% = $0.20 per deployment
 - Monthly revenue: $2,000 from platform fees
 - Subscription revenue: 2,000 Pro users × $19 = $38,000/month
 
@@ -536,7 +536,7 @@ Total cost this month: $24.80
 ### Security
 
 **Authentication:**
-- SSH keys managed by Glean (stored securely)
+- SSH keys managed by Memori (stored securely)
 - Optional: Bring your own SSH key
 - Cloud credentials stored with encryption (AWS Secrets Manager, etc.)
 
@@ -555,12 +555,12 @@ Total cost this month: $24.80
 
 **Connection:**
 - SSH latency: <50ms (same region), <150ms (cross-region)
-- Gleanify overhead: <10ms
+- Memoriify overhead: <10ms
 - Target: Sub-second to fully interactive terminal
 
 **Resource Usage:**
-- Glean Agent memory: <50MB
-- Glean Agent CPU: <1% idle, <5% active
+- Memori Agent memory: <50MB
+- Memori Agent CPU: <1% idle, <5% active
 - Container startup time: <30 seconds
 
 ### Reliability
@@ -573,7 +573,7 @@ Total cost this month: $24.80
 **Data Durability:**
 - Ephemeral Gleeees: Data lost on destroy (by design)
 - Persistent volumes: Standard cloud provider SLA (99.99%+)
-- Glean Drive sync ensures no loss of workflows/prompts
+- Memori Drive sync ensures no loss of workflows/prompts
 
 ### Scalability
 
@@ -605,12 +605,12 @@ Total cost this month: $24.80
 ### Launch Plan
 
 **Phase 1: Private Beta (Month 1-2)**
-- Invite 100 power users from Glean community
+- Invite 100 power users from Memori community
 - AWS only, limited templates
 - Gather feedback, iterate quickly
 
 **Phase 2: Public Beta (Month 3-4)**
-- Open to all Glean users
+- Open to all Memori users
 - Announce on Twitter, Hacker News, Product Hunt
 - Partner with cloud providers (AWS credits for new users)
 
@@ -677,7 +677,7 @@ Total cost this month: $24.80
 - *Impact*: High - Users can't deploy or access Gleeees
 - *Mitigation*: Multi-region support, graceful degradation, status page
 
-**Risk: Security Vulnerability in Glean Agent**
+**Risk: Security Vulnerability in Memori Agent**
 - *Impact*: Critical - Could compromise user containers
 - *Mitigation*: Regular security audits, bug bounty program, rapid patching
 
@@ -697,7 +697,7 @@ Total cost this month: $24.80
 
 **Risk: Competition from Cloud IDEs**
 - *Impact*: Medium - GitHub Codespaces, GitPod, etc.
-- *Mitigation*: Focus on Glean's unique UX, AI features, local-first approach
+- *Mitigation*: Focus on Memori's unique UX, AI features, local-first approach
 
 ### Legal/Compliance Risks
 
@@ -767,18 +767,18 @@ Total cost this month: $24.80
 
 **Gleeees Advantages:**
 - ✅ Local terminal experience (not browser)
-- ✅ Full Glean features (AI, workflows, etc.)
+- ✅ Full Memori features (AI, workflows, etc.)
 - ✅ Multi-cloud (eventually)
-- ✅ Glean Drive integration
-- ✅ Auto-Gleanify (no setup)
+- ✅ Memori Drive integration
+- ✅ Auto-Memoriify (no setup)
 
 ### Technical FAQ
 
 **Q: Why Docker instead of VMs?**
 A: Faster startup (<30s vs 2-3min), cheaper, easier to template, portable.
 
-**Q: How does auto-Gleanify work?**
-A: Glean agent runs in container, detects SSH connection, initializes Gleanify protocol automatically.
+**Q: How does auto-Memoriify work?**
+A: Memori agent runs in container, detects SSH connection, initializes Memoriify protocol automatically.
 
 **Q: Can I use my own Docker images?**
 A: Phase 2 feature. MVP uses official templates only.
@@ -786,8 +786,8 @@ A: Phase 2 feature. MVP uses official templates only.
 **Q: What happens to my code when Gleeee is destroyed?**
 A: Ephemeral by default (code is lost). Use persistent volumes or sync to Git.
 
-**Q: Can I access Gleeee from non-Glean terminal?**
-A: Yes, standard SSH works. You just lose Glean features.
+**Q: Can I access Gleeee from non-Memori terminal?**
+A: Yes, standard SSH works. You just lose Memori features.
 
 **Q: Support for GPU instances?**
 A: Yes, users can select any instance type their cloud provider offers.
@@ -797,7 +797,7 @@ A: Yes, users can select any instance type their cloud provider offers.
 ## Next Steps
 
 1. **Validation** (Week 1-2)
-   - User interviews with 20 Glean power users
+   - User interviews with 20 Memori power users
    - Validate pricing assumptions
    - Gather template requirements
 

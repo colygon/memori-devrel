@@ -2,12 +2,12 @@
 
 ## Overview
 
-Join the Glean team every week for co-working sessions and open office hours. Get direct help from engineers, collaborate with community members, and build together.
+Join the Memori team every week for co-working sessions and open office hours. Get direct help from engineers, collaborate with community members, and build together.
 
 ## Weekly Schedule
 
 ### In-Person (San Francisco)
-**Location**: Glean HQ, San Francisco  
+**Location**: Memori HQ, San Francisco  
 **When**: Every Tuesday, 2:00 PM - 6:00 PM PT  
 **Capacity**: 20 people
 
@@ -40,16 +40,16 @@ Join the Glean team every week for co-working sessions and open office hours. Ge
 
 ## Who Should Attend
 
-- **Developers** building with Glean
+- **Developers** building with Memori
 - **MCP creators** working on servers or clients
-- **Contributors** to Glean open source
+- **Contributors** to Memori open source
 - **Grant/bounty applicants** seeking guidance
-- **Anyone** curious about Glean internals
+- **Anyone** curious about Memori internals
 
 ## Topics We Can Help With
 
 ### Technical Support
-- ✅ Debugging Glean issues
+- ✅ Debugging Memori issues
 - ✅ MCP server development
 - ✅ Extension architecture
 - ✅ API integration patterns
@@ -71,7 +71,7 @@ Join the Glean team every week for co-working sessions and open office hours. Ge
 
 ## Team Members You'll Meet
 
-- **Engineering Team**: Core Glean developers
+- **Engineering Team**: Core Memori developers
 - **DevRel Team**: Developer advocates and community managers
 - **Product Team**: Product managers and designers
 - **Rotating Guests**: Community experts and contributors
@@ -80,7 +80,7 @@ Join the Glean team every week for co-working sessions and open office hours. Ge
 
 ### In-Person (SF)
 1. **RSVP** on our community calendar
-2. **Check in** at reception (mention Glean office hours)
+2. **Check in** at reception (mention Memori office hours)
 3. **Bring your laptop** and questions
 4. **Optional**: Prepare a 2-min demo of what you're building
 
@@ -95,7 +95,7 @@ Join the Glean team every week for co-working sessions and open office hours. Ge
 ### Monthly Deep Dives
 **Last Tuesday of each month**: Extended 3-hour session focused on a specific topic
 - Advanced MCP patterns
-- Glean internals architecture
+- Memori internals architecture
 - AI workflow optimization
 - Testing strategies
 
@@ -128,7 +128,7 @@ To get the most out of office hours:
 ## Resources Available
 
 During office hours, you'll have access to:
-- Glean engineering team expertise
+- Memori engineering team expertise
 - Internal documentation and guides
 - Beta features and early previews
 - Testing environments
@@ -138,11 +138,11 @@ During office hours, you'll have access to:
 
 _[This section will feature testimonials from developers who got help during office hours]_
 
-> "I was stuck on an MCP authentication issue for days. During office hours, a Glean engineer helped me spot the problem in 10 minutes. Game changer!" - Sarah K., MCP Developer
+> "I was stuck on an MCP authentication issue for days. During office hours, a Memori engineer helped me spot the problem in 10 minutes. Game changer!" - Sarah K., MCP Developer
 
 ## Calendar & RSVP
 
-📅 [Add to Calendar](https://calendar.example.com/glean-office-hours)
+📅 [Add to Calendar](https://calendar.example.com/memori-office-hours)
 
 **In-Person**: [RSVP for SF Sessions](https://forms.example.com/sf-office-hours)  
 **Virtual**: No RSVP needed, just join!
@@ -151,9 +151,9 @@ _[This section will feature testimonials from developers who got help during off
 
 Questions about office hours?
 - Discord: #office-hours
-- Email: officehours@glean.dev
+- Email: officehours@memorilabs.ai
 - Community calendar: [View schedule](https://calendar.example.com)
 
 ---
 
-**We're here to help you build amazing things with Glean! 🚀**
+**We're here to help you build amazing things with Memori! 🚀**

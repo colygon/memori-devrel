@@ -1,8 +1,8 @@
-# Glean Academy - API & Integration Training
+# Memori Academy - API & Integration Training
 
 ## Overview
 
-Glean Academy provides comprehensive training on building AI agents, apps, and integrations using Glean's Work AI Platform. All courses are aligned with our official developer documentation at [developers.glean.com](https://developers.glean.com).
+Memori Academy provides comprehensive training on building AI agents, apps, and integrations using Memori's Work AI Platform. All courses are aligned with our official developer documentation at [memorilabs.ai/docs](https://memorilabs.ai/docs).
 
 **Access**: [learning-paths.html](../learning-paths.html)
 
@@ -11,22 +11,22 @@ Glean Academy provides comprehensive training on building AI agents, apps, and i
 ## 🎓 Learning Paths
 
 ### Path 1: Direct API Integration (16 hours)
-**Build custom agents using Glean's REST APIs with official client libraries**
+**Build custom agents using Memori's REST APIs with official client libraries**
 
-[Official Guide](https://developers.glean.com/guides/agents/direct-api)
+[Official Guide](https://memorilabs.ai/docs/guides/agents/direct-api)
 
 #### Module 1: API Fundamentals (3 hours)
-- Understanding Glean's Client API vs Indexing API
+- Understanding Memori's Client API vs Indexing API
 - Authentication and API tokens
 - Rate limits and best practices
 - Setting up your development environment
 
 #### Module 2: Client Libraries (4 hours)
-- **Python SDK**: `pip install glean-api-client`
-- **TypeScript SDK**: `npm install @gleanwork/api-client`
-- **Go SDK**: `go get github.com/gleanwork/api-client-go`
+- **Python SDK**: `pip install memori-api-client`
+- **TypeScript SDK**: `npm install @memoriwork/api-client`
+- **Go SDK**: `go get github.com/memoriwork/api-client-go`
 - **Java SDK**: Maven/Gradle configuration
-- [Client Libraries Documentation](https://developers.glean.com/libraries/api-clients)
+- [Client Libraries Documentation](https://memorilabs.ai/docs/libraries/api-clients)
 
 #### Module 3: Core APIs (5 hours)
 - **Chat API**: Conversational AI with context
@@ -49,12 +49,12 @@ Glean Academy provides comprehensive training on building AI agents, apps, and i
 ### Path 2: LangChain Integration (12 hours)
 **Build AI agents using Python and the LangChain framework**
 
-[Official Guide](https://developers.glean.com/guides/agents/langchain)
+[Official Guide](https://memorilabs.ai/docs/guides/agents/langchain)
 
 #### Module 1: Setup (2 hours)
-- Installing `langchain-glean`
+- Installing `langchain-memori`
 ```bash
-pip install -U langchain-glean
+pip install -U langchain-memori
 ```
 - API token configuration
 - Environment variables setup
@@ -66,8 +66,8 @@ pip install -U langchain-glean
 - Memory and conversation state
 - Tool integration patterns
 
-#### Module 3: Glean Tools in LangChain (4 hours)
-- Using Glean as a retriever
+#### Module 3: Memori Tools in LangChain (4 hours)
+- Using Memori as a retriever
 - Implementing RAG patterns
 - Multi-step reasoning
 - Context management
@@ -85,7 +85,7 @@ pip install -U langchain-glean
 ### Path 3: Agent Toolkit (14 hours)
 **Use pre-built tools across multiple agent frameworks**
 
-[Official Guide](https://developers.glean.com/guides/agents/toolkit)
+[Official Guide](https://memorilabs.ai/docs/guides/agents/toolkit)
 
 #### Module 1: Toolkit Overview (2 hours)
 - When to use the Agent Toolkit
@@ -93,17 +93,17 @@ pip install -U langchain-glean
 - Installation for each framework
 ```bash
 # OpenAI
-pip install glean-agent-toolkit[openai]
+pip install memori-agent-toolkit[openai]
 # LangChain
-pip install glean-agent-toolkit[langchain]
+pip install memori-agent-toolkit[langchain]
 # CrewAI
-pip install glean-agent-toolkit[crewai]
+pip install memori-agent-toolkit[crewai]
 # Google ADK  
-pip install glean-agent-toolkit[adk]
+pip install memori-agent-toolkit[adk]
 ```
 
 #### Module 2: Available Tools (4 hours)
-- **glean_search**: Company knowledge base search
+- **memori_search**: Company knowledge base search
 - **employee_search**: Find employees by attributes
 - **calendar_search**: Meetings and events
 - **code_search**: Source code repositories
@@ -117,19 +117,19 @@ pip install glean-agent-toolkit[adk]
 - Google ADK implementation
 
 #### Module 4: Custom Tools (4 hours)
-- Creating custom Glean tools
+- Creating custom Memori tools
 - Tool chaining and composition
 - Cross-framework compatibility
 - Testing and validation
 
-**Assessment**: Build a multi-agent system using CrewAI with Glean tools
+**Assessment**: Build a multi-agent system using CrewAI with Memori tools
 
 ---
 
 ### Path 4: MCP Integration (10 hours)
-**Connect AI tools to Glean's enterprise knowledge with zero setup**
+**Connect AI tools to Memori's enterprise knowledge with zero setup**
 
-[Official Guide](https://developers.glean.com/guides/mcp)
+[Official Guide](https://memorilabs.ai/docs/guides/mcp)
 
 #### Module 1: MCP Fundamentals (2 hours)
 - Model Context Protocol overview
@@ -143,7 +143,7 @@ pip install glean-agent-toolkit[adk]
 - Configuration for Claude Desktop
 - Configuration for Cursor IDE
 - Configuration for Windsurf
-- [Administrator Guide](https://docs.glean.com/admin/mcp)
+- [Administrator Guide](https://docs.memori.com/admin/mcp)
 
 #### Module 3: MCP Tools (3 hours)
 - **company_search**: Query enterprise content
@@ -153,7 +153,7 @@ pip install glean-agent-toolkit[adk]
 
 #### Module 4: Local MCP Server (2 hours)
 - Self-hosted implementation
-- `@gleanwork/local-mcp-server`
+- `@memoriwork/local-mcp-server`
 - Custom tool development
 - Air-gapped environments
 
@@ -164,7 +164,7 @@ pip install glean-agent-toolkit[adk]
 ### Path 5: Web SDK Integration (12 hours)
 **Embed AI-powered search and chat into your intranet portal**
 
-[Official Guide](https://developers.glean.com/libraries/web-sdk/overview)
+[Official Guide](https://memorilabs.ai/docs/libraries/web-sdk/overview)
 
 #### Module 1: SDK Setup (2 hours)
 - Installation and configuration
@@ -173,7 +173,7 @@ pip install glean-agent-toolkit[adk]
 - Component overview
 
 #### Module 2: Available Components (4 hours)
-- **Glean Chat**: Embed full chat functionality
+- **Memori Chat**: Embed full chat functionality
 - **Autocomplete + Search Results**: Custom search page
 - **Modal Search**: Overlay dialog implementation
 - **Sidebar Search**: Contextual recommendations
@@ -191,19 +191,19 @@ pip install glean-agent-toolkit[adk]
 - Analytics integration
 - A/B testing
 
-**Assessment**: Build a custom search page with Glean components
+**Assessment**: Build a custom search page with Memori components
 
 ---
 
 ### Path 6: NVIDIA NIM Integration (8 hours)
-**Build agents with NVIDIA NIM microservices and Glean**
+**Build agents with NVIDIA NIM microservices and Memori**
 
-[Official Guide](https://developers.glean.com/guides/agents/nvidia-example)
+[Official Guide](https://memorilabs.ai/docs/guides/agents/nvidia-example)
 
 #### Module 1: Setup (2 hours)
 - NVIDIA API key configuration
 - LangChain NVIDIA endpoints
-- Glean API setup
+- Memori API setup
 - Environment configuration
 ```python
 from langchain_nvidia_ai_endpoints import ChatNVIDIA, NVIDIAEmbeddings
@@ -211,7 +211,7 @@ from langchain_nvidia_ai_endpoints import ChatNVIDIA, NVIDIAEmbeddings
 
 #### Module 2: RAG Architecture (3 hours)
 - Understanding retrieval-augmented generation
-- Using Glean as a retriever
+- Using Memori as a retriever
 - Embedding models
 - Context injection
 
@@ -227,27 +227,27 @@ from langchain_nvidia_ai_endpoints import ChatNVIDIA, NVIDIAEmbeddings
 - Monitoring and observability
 - Scaling considerations
 
-**Assessment**: Build a customer support agent with NVIDIA NIM + Glean
+**Assessment**: Build a customer support agent with NVIDIA NIM + Memori
 
 ---
 
 ## 🏆 Certifications
 
-### Glean API Developer (Beginner)
+### Memori API Developer (Beginner)
 - **Duration**: 10 hours
 - **Prerequisites**: Basic Python or TypeScript knowledge
 - **Topics**: Client APIs, Authentication, Basic agent building
 - **Assessment**: Build a simple search integration
 - **Cost**: Free
 
-### Glean Integration Specialist (Intermediate)
+### Memori Integration Specialist (Intermediate)
 - **Duration**: 20 hours
 - **Prerequisites**: API Developer certification
 - **Topics**: LangChain, Agent Toolkit, Web SDK, MCP
 - **Assessment**: Build a production agent with one framework
 - **Cost**: $299 (Free for Enterprise)
 
-### Glean Solutions Architect (Advanced)
+### Memori Solutions Architect (Advanced)
 - **Duration**: 40 hours
 - **Prerequisites**: Integration Specialist certification
 - **Topics**: Multi-framework integration, custom tools, enterprise architecture
@@ -294,7 +294,7 @@ from langchain_nvidia_ai_endpoints import ChatNVIDIA, NVIDIAEmbeddings
 - **Format**: Code-along
 - **Topics**: All components, Customization, Production deployment
 
-### NVIDIA NIM + Glean Integration
+### NVIDIA NIM + Memori Integration
 - **Duration**: 6 hours
 - **Level**: Advanced
 - **Format**: Technical workshop
@@ -353,7 +353,7 @@ from langchain_nvidia_ai_endpoints import ChatNVIDIA, NVIDIAEmbeddings
 
 ### Upcoming Schedule
 
-**January 2026: Getting Started with Glean APIs**
+**January 2026: Getting Started with Memori APIs**
 - Introduction to Client and Indexing APIs
 - Your first API integration
 - Best practices and common patterns
@@ -373,17 +373,17 @@ from langchain_nvidia_ai_endpoints import ChatNVIDIA, NVIDIAEmbeddings
 - Scaling and performance
 - Monitoring and observability
 
-[Register for Webinars](https://academy.glean.dev/webinars)
+[Register for Webinars](https://academy.memorilabs.ai/webinars)
 
 ---
 
 ## 🔗 Quick Links
 
-- **Developer Portal**: https://developers.glean.com
+- **Developer Portal**: https://memorilabs.ai/docs
 - **Learning Paths**: [learning-paths.html](../learning-paths.html)
-- **API Reference**: https://developers.glean.com/api/client-api
-- **GitHub Examples**: https://github.com/gleanwork
-- **Community Slack**: https://glean.dev/slack
+- **API Reference**: https://memorilabs.ai/docs/api/client-api
+- **GitHub Examples**: https://github.com/memoriwork
+- **Community Slack**: https://memorilabs.ai/slack
 
 ---
 
@@ -401,9 +401,9 @@ from langchain_nvidia_ai_endpoints import ChatNVIDIA, NVIDIAEmbeddings
 
 ## 📞 Contact
 
-**Enterprise Training Inquiries**: academy@glean.com  
-**Certification Support**: cert@glean.com  
-**Technical Questions**: support@glean.com
+**Enterprise Training Inquiries**: academy@memori.com  
+**Certification Support**: cert@memori.com  
+**Technical Questions**: support@memori.com
 
 **Office Hours**: Every Tuesday & Thursday, 2-4 PM PT  
-[Schedule Office Hours](https://glean.dev/office-hours)
+[Schedule Office Hours](https://memorilabs.ai/office-hours)

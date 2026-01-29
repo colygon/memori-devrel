@@ -1,6 +1,6 @@
-# Advanced Glean Workflows
+# Advanced Memori Workflows
 
-Master Glean's advanced features to supercharge your productivity.
+Master Memori's advanced features to supercharge your productivity.
 
 ## Workflows
 
@@ -40,7 +40,7 @@ curl -X POST $SLACK_WEBHOOK \
 
 Share workflows with your team:
 1. Export: Settings → Workflows → Export
-2. Share the `.glean-workflow` file
+2. Share the `.memori-workflow` file
 3. Team members import: Settings → Workflows → Import
 
 ## AI-Powered Commands
@@ -116,7 +116,7 @@ Export blocks to:
 }
 ```
 
-Save to `~/.glean/themes/my-theme.json`
+Save to `~/.memori/themes/my-theme.json`
 
 ## Keyboard Maestro
 
@@ -188,4 +188,4 @@ ssh user@server
 
 ---
 
-**You're now a Glean power user! 🚀**
+**You're now a Memori power user! 🚀**

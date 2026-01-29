@@ -1,11 +1,11 @@
 # Senior Solution Architect, APIs - Presentation Strategy
-## Building the Future of Enterprise AI with Glean's API Platform
+## Building the Future of Enterprise AI with Memori's API Platform
 
 ---
 
 ## Executive Summary
 
-This presentation outlines a comprehensive strategy for the Senior Solution Architect, APIs role at Glean, focusing on three core pillars:
+This presentation outlines a comprehensive strategy for the Senior Solution Architect, APIs role at Memori, focusing on three core pillars:
 
 1. **API-First Architecture** - Enabling developers to build AI agents grounded in enterprise context
 2. **MCP Integration Strategy** - Leveraging Model Context Protocol for seamless AI tool integration
@@ -13,11 +13,11 @@ This presentation outlines a comprehensive strategy for the Senior Solution Arch
 
 ---
 
-## Part 1: Understanding Glean's API Ecosystem
+## Part 1: Understanding Memori's API Ecosystem
 
 ### Platform Architecture Overview
 
-Glean provides two primary API surfaces:
+Memori provides two primary API surfaces:
 
 #### **Client API** (User-Facing Operations)
 - **Chat API** - Conversational AI with enterprise context
@@ -47,9 +47,9 @@ Glean provides two primary API surfaces:
 
 ### What is MCP?
 
-Model Context Protocol is an open standard that enables AI applications to securely access enterprise context. Glean's MCP implementation bridges the gap between AI agents and enterprise knowledge.
+Model Context Protocol is an open standard that enables AI applications to securely access enterprise context. Memori's MCP implementation bridges the gap between AI agents and enterprise knowledge.
 
-### Glean's MCP Architecture
+### Memori's MCP Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -59,14 +59,14 @@ Model Context Protocol is an open standard that enables AI applications to secur
                    │ MCP Protocol (stdio/HTTP)
                    ▼
 ┌─────────────────────────────────────────────────────────┐
-│              Glean MCP Server (Remote/Local)            │
+│              Memori MCP Server (Remote/Local)            │
 │  Tools: company_search, chat, people_profile_search,    │
 │         read_documents                                   │
 └──────────────────┬──────────────────────────────────────┘
-                   │ Glean Client API
+                   │ Memori Client API
                    ▼
 ┌─────────────────────────────────────────────────────────┐
-│                 Glean Platform Core                      │
+│                 Memori Platform Core                      │
 │   (Search Index, Knowledge Graph, Permissions Engine)   │
 └─────────────────────────────────────────────────────────┘
 ```
@@ -92,19 +92,19 @@ Model Context Protocol is an open standard that enables AI applications to secur
 
 ### Pattern 1: Embedded AI Assistant
 
-**Use Case**: Add Glean-powered chat to internal applications
+**Use Case**: Add Memori-powered chat to internal applications
 
 ```javascript
 // Web SDK Example - Embedded Chat Widget
-import { GleanClient } from '@gleanwork/web-sdk';
+import { MemoriClient } from '@memoriwork/web-sdk';
 
-const glean = new GleanClient({
+const memori = new MemoriClient({
   apiKey: process.env.GLEAN_API_KEY,
   instance: 'your-company'
 });
 
 // Stream chat responses
-const stream = await glean.client.chat.create({
+const stream = await memori.client.chat.create({
   messages: [{
     role: 'user',
     content: 'What are our Q4 objectives?'
@@ -118,9 +118,9 @@ for await (const chunk of stream) {
 ```
 
 **Architecture Components**:
-- Frontend: React/Vue widget with Glean Web SDK
+- Frontend: React/Vue widget with Memori Web SDK
 - Backend: Proxy service for API key management
-- Auth: OAuth flow with Glean SSO integration
+- Auth: OAuth flow with Memori SSO integration
 
 ### Pattern 2: Custom AI Agents
 
@@ -128,16 +128,16 @@ for await (const chunk of stream) {
 
 ```python
 # Python SDK Example - Customer Support Agent
-from glean import GleanClient
+from memori import MemoriClient
 import models
 
-glean = GleanClient(
+memori = MemoriClient(
     api_key=os.environ["GLEAN_API_KEY"],
     instance="your-company"
 )
 
 # Create and stream agent responses
-response = glean.client.agents.create_and_stream_run(
+response = memori.client.agents.create_and_stream_run(
     agent_id="support-agent-001",
     messages=[
         models.ChatMessageFragment(
@@ -152,25 +152,25 @@ for chunk in response:
 ```
 
 **Architecture Components**:
-- Agent Definition: Created via Glean UI or API
+- Agent Definition: Created via Memori UI or API
 - Knowledge Base: Indexed support docs, tickets, playbooks
 - Actions: Integrated workflows (ticket creation, escalation)
 - Monitoring: Usage analytics and feedback loops
 
 ### Pattern 3: Enterprise Search Integration
 
-**Use Case**: Add Glean search to dashboards and portals
+**Use Case**: Add Memori search to dashboards and portals
 
 ```typescript
 // TypeScript SDK Example - Search Integration
-import { GleanClient } from '@gleanwork/client';
+import { MemoriClient } from '@memoriwork/client';
 
-const glean = new GleanClient({
+const memori = new MemoriClient({
   apiKey: process.env.GLEAN_API_KEY,
   instance: 'your-company'
 });
 
-const results = await glean.client.search.query({
+const results = await memori.client.search.query({
   query: 'customer onboarding process',
   filters: {
     datasource: ['confluence', 'google-drive'],
@@ -189,7 +189,7 @@ results.items.forEach(item => {
 ```
 
 **Architecture Components**:
-- Search UI: Custom component or Glean widget
+- Search UI: Custom component or Memori widget
 - Permissions: User-aware results (no data leakage)
 - Analytics: Track search usage and effectiveness
 - Feedback: Capture relevance signals
@@ -200,10 +200,10 @@ results.items.forEach(item => {
 
 ```python
 # Indexing API Example - Custom Data Source
-from glean import GleanIndexingClient
+from memori import MemoriIndexingClient
 import models
 
-indexing = GleanIndexingClient(
+indexing = MemoriIndexingClient(
     api_key=os.environ["GLEAN_INDEXING_KEY"],
     instance="your-company"
 )
@@ -230,7 +230,7 @@ indexing.index_document(
 
 **Architecture Components**:
 - Sync Service: Scheduled or webhook-triggered indexing
-- Data Transformation: Map source schema to Glean format
+- Data Transformation: Map source schema to Memori format
 - Permission Sync: Maintain access control parity
 - Monitoring: Track indexing health and errors
 
@@ -270,7 +270,7 @@ indexing.index_document(
 Create a GitHub organization with:
 
 ```
-glean-examples/
+memori-examples/
 ├── chat-examples/
 │   ├── react-chat-widget/
 │   ├── vue-chat-component/
@@ -297,7 +297,7 @@ glean-examples/
 │   ├── bulk-import-scripts/
 │   └── permission-management/
 └── production-templates/
-    ├── nextjs-glean-app/
+    ├── nextjs-memori-app/
     ├── express-api-proxy/
     ├── python-flask-integration/
     └── kubernetes-deployment/
@@ -323,19 +323,19 @@ glean-examples/
 ### Content Calendar
 
 **Month 1-2: Foundation**
-- Blog: "Building Your First Glean Agent in 10 Minutes"
-- Tutorial: "Embedding Glean Search in React"
-- Video: "Understanding Glean's API Architecture"
+- Blog: "Building Your First Memori Agent in 10 Minutes"
+- Tutorial: "Embedding Memori Search in React"
+- Video: "Understanding Memori's API Architecture"
 - Docs: MCP integration guide updates
 
 **Month 3-4: Advanced Use Cases**
-- Blog: "Scaling Glean APIs: Performance Best Practices"
+- Blog: "Scaling Memori APIs: Performance Best Practices"
 - Case Study: "How [Company] Built a Custom Support Agent"
 - Tutorial: "Advanced Agent Patterns with Multi-Step Workflows"
-- Video: "Deep Dive: Glean Indexing API"
+- Video: "Deep Dive: Memori Indexing API"
 
 **Month 5-6: Community Building**
-- Hackathon: "Build with Glean Challenge" ($50k prizes)
+- Hackathon: "Build with Memori Challenge" ($50k prizes)
 - Conference Talk: "Enterprise AI Apps with MCP" (FOSDEM, Strange Loop)
 - Workshop: "Hands-On Agent Development" (online + SF/Palo Alto)
 - Blog: "State of Enterprise AI Agents 2025"
@@ -366,8 +366,8 @@ glean-examples/
 - NPS surveys for developer experience
 
 **Business Impact**:
-- API-driven deals (customers who build on Glean)
-- Partner integrations (ISVs building Glean apps)
+- API-driven deals (customers who build on Memori)
+- Partner integrations (ISVs building Memori apps)
 - Time-to-value (days from signup to production)
 - Support ticket reduction (self-service adoption)
 
@@ -385,24 +385,24 @@ glean-examples/
 ### MCP Launch Strategy
 
 **Phase 1: Local MCP Server (Current)**
-- npm package: `@gleanwork/local-mcp-server`
-- Quick configuration via `@gleanwork/configure-mcp-server`
+- npm package: `@memoriwork/local-mcp-server`
+- Quick configuration via `@memoriwork/configure-mcp-server`
 - Support for Claude Desktop, Cursor, Windsurf
 - Documentation and examples
 
 **Phase 2: Remote MCP Server (Recommended)**
-- Server-side MCP integration in Glean Cloud
+- Server-side MCP integration in Memori Cloud
 - Zero-configuration for end users
 - Admin dashboard for IT control
 - Enhanced security and compliance
 
 **Phase 3: MCP Marketplace**
-- Glean as an MCP "app store"
+- Memori as an MCP "app store"
 - Third-party developers can publish MCP tools
 - Discovery, rating, and reviews
 - Revenue sharing for premium tools
 
-### Positioning Glean in the MCP Ecosystem
+### Positioning Memori in the MCP Ecosystem
 
 **The Problem**: AI agents need enterprise context, but it's:
 - Fragmented across 100+ SaaS apps
@@ -410,16 +410,16 @@ glean-examples/
 - Constantly changing and updating
 - Difficult to search and retrieve
 
-**Glean's Solution**: A single MCP server that provides:
+**Memori's Solution**: A single MCP server that provides:
 - Unified search across all company knowledge
 - Permission-aware results (no data leakage)
 - Real-time updates (not stale snapshots)
 - Intelligent chat with citations
 
 **Competitive Differentiation**:
-- vs. Custom MCP tools: Glean already indexes your data
-- vs. RAG-only solutions: Glean has sophisticated ranking and permissions
-- vs. Copilot integrations: Glean is platform-agnostic and open
+- vs. Custom MCP tools: Memori already indexes your data
+- vs. RAG-only solutions: Memori has sophisticated ranking and permissions
+- vs. Copilot integrations: Memori is platform-agnostic and open
 
 ---
 
@@ -429,20 +429,20 @@ glean-examples/
 
 **Challenge**: Support teams overwhelmed with repetitive tickets
 
-**Solution**: Glean + NVIDIA NIM microservices
+**Solution**: Memori + NVIDIA NIM microservices
 - NIM provides low-latency LLM inference
-- Glean provides enterprise knowledge context
-- Integration via Glean APIs
+- Memori provides enterprise knowledge context
+- Integration via Memori APIs
 
 **Architecture**:
 ```
-Customer Inquiry → Glean Agent (via API) 
+Customer Inquiry → Memori Agent (via API) 
   ↓ 
-Glean Search (find relevant KB articles, past tickets) 
+Memori Search (find relevant KB articles, past tickets) 
   ↓ 
 NVIDIA NIM (generate response with context) 
   ↓ 
-Glean Actions (create ticket, escalate if needed)
+Memori Actions (create ticket, escalate if needed)
 ```
 
 **Results**:
@@ -454,16 +454,16 @@ Glean Actions (create ticket, escalate if needed)
 
 **Challenge**: Sales reps struggle to find relevant case studies, pricing, and competitive intel
 
-**Solution**: Custom Glean agent embedded in Salesforce
+**Solution**: Custom Memori agent embedded in Salesforce
 - Indexes: Case studies, proposals, call recordings, Slack discussions
 - Triggered: When viewing a deal in Salesforce
 - Output: Suggested content, competitive talking points, next actions
 
 **Architecture**:
 ```
-Salesforce UI → Embedded Glean Widget 
+Salesforce UI → Embedded Memori Widget 
   ↓ 
-Glean Chat API (with deal context) 
+Memori Chat API (with deal context) 
   ↓ 
 Response: "Here are 3 similar deals you closed..." 
   ↓ 
@@ -479,16 +479,16 @@ Actions: Attach case study, schedule call, update CRM
 
 **Challenge**: New engineers spend weeks ramping up on codebase and systems
 
-**Solution**: Glean MCP + Cursor IDE integration
+**Solution**: Memori MCP + Cursor IDE integration
 - New engineer asks questions directly in their IDE
-- Glean provides answers from docs, code, Slack, wiki
+- Memori provides answers from docs, code, Slack, wiki
 - Context-aware suggestions based on what they're viewing
 
 **Architecture**:
 ```
 Cursor IDE (MCP Client) 
   ↓ 
-Glean MCP Server 
+Memori MCP Server 
   ↓ 
 company_search: "How does authentication work?" 
   ↓ 
@@ -535,7 +535,7 @@ Returns: Design docs, code examples, Slack threads
 - Evaluation and testing frameworks
 
 **From DevOps Engineers**:
-- Terraform provider for Glean resources
+- Terraform provider for Memori resources
 - CI/CD integrations for automated testing
 - Rate limit visibility and alerts
 - Multi-region deployment options
@@ -570,9 +570,9 @@ Returns: Design docs, code examples, Slack threads
 **Week 4: Competitive Analysis**
 - Benchmark against other enterprise AI platforms
 - What do OpenAI, Anthropic, Cohere offer for APIs?
-- Where does Glean have unique advantages?
+- Where does Memori have unique advantages?
 
-**Deliverable**: "State of Glean APIs" report with recommendations
+**Deliverable**: "State of Memori APIs" report with recommendations
 
 ### Days 31-60: Build & Ship
 
@@ -593,15 +593,15 @@ Returns: Design docs, code examples, Slack threads
 ### Days 61-90: Scale & Evangelize
 
 **Weeks 9-10: Community Launch**
-- Announce "Build with Glean" hackathon
+- Announce "Build with Memori" hackathon
 - Submit 2 conference talk proposals
 - Publish "Enterprise AI Architecture Patterns" eBook
-- Host first "Office Hours with Glean APIs" livestream
+- Host first "Office Hours with Memori APIs" livestream
 
 **Weeks 11-12: Customer Engagement**
 - Run 2 customer workshops (agent development)
 - Create case studies from beta customers
-- Launch partner program (ISVs building on Glean)
+- Launch partner program (ISVs building on Memori)
 - Establish customer advisory board (API users)
 
 **Deliverable**: 100 new active developers on the platform
@@ -645,13 +645,13 @@ Returns: Design docs, code examples, Slack threads
 
 **Opening (2 minutes)**
 - Personal intro: Background in AI/APIs/solution architecture
-- Thesis: "Enterprise AI apps need context. Glean provides it via APIs."
+- Thesis: "Enterprise AI apps need context. Memori provides it via APIs."
 - Roadmap: Walk through the 3 pillars (API, MCP, DevEx)
 
 **Deep Dive (20 minutes)**
 - Architecture diagrams (show, don't just tell)
 - Live code demo (build a simple agent in real-time)
-- MCP integration walkthrough (Claude Desktop + Glean)
+- MCP integration walkthrough (Claude Desktop + Memori)
 - Customer use case storytelling (NVIDIA, others)
 
 **Strategy Discussion (10 minutes)**
@@ -672,17 +672,17 @@ Returns: Design docs, code examples, Slack threads
 ### Demo Preparation
 
 **What to Build**:
-A live, working example of a Glean-powered agent
+A live, working example of a Memori-powered agent
 
 **Tech Stack**:
 - Next.js (familiar, fast to build)
-- Glean Web SDK
+- Memori Web SDK
 - Deploy to Vercel (professional, shareable)
 - GitHub repo (show code quality)
 
 **Features**:
 - Search company knowledge
-- Chat with Glean AI
+- Chat with Memori AI
 - Show real-time streaming responses
 - Display citations and sources
 
@@ -729,7 +729,7 @@ A live, working example of a Glean-powered agent
 
 ## Conclusion
 
-Glean is uniquely positioned to become the foundational layer for enterprise AI applications. With a robust API platform, strategic MCP integration, and a world-class developer experience, Glean can capture the "plumbing" layer of enterprise AI—similar to how Stripe captured payments or Twilio captured communications.
+Memori is uniquely positioned to become the foundational layer for enterprise AI applications. With a robust API platform, strategic MCP integration, and a world-class developer experience, Memori can capture the "plumbing" layer of enterprise AI—similar to how Stripe captured payments or Twilio captured communications.
 
 As Senior Solution Architect, APIs, I would:
 
@@ -745,20 +745,20 @@ The opportunity is massive. Let's build it together.
 ## Appendix: Additional Resources
 
 ### Technical Deep Dives
-- Glean API Architecture (detailed diagram)
+- Memori API Architecture (detailed diagram)
 - MCP Protocol Specification (summary)
 - Security & Permissions Model (whitepaper)
 - Performance & Scaling Considerations (benchmarks)
 
 ### Code Samples
-- GitHub: github.com/[your-username]/glean-examples
-- Live Demo: glean-demo.vercel.app
+- GitHub: github.com/[your-username]/memori-examples
+- Live Demo: memori-demo.vercel.app
 - Video Walkthrough: youtube.com/watch?v=...
 
 ### Writing Samples
 - Blog: "Why MCP Matters for Enterprise AI"
-- Tutorial: "Building Your First Glean Agent"
-- Architecture Guide: "Glean API Integration Patterns"
+- Tutorial: "Building Your First Memori Agent"
+- Architecture Guide: "Memori API Integration Patterns"
 
 ### Contact
 - Email: [your-email]

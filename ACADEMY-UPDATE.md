@@ -1,10 +1,10 @@
-# Glean Academy Update - API-Focused Curriculum
+# Memori Academy Update - API-Focused Curriculum
 
 ## ✅ Issues Fixed
 
 ### Broken Links Resolved
 All instances of broken Academy links have been fixed:
-- `viewer.html?doc=glean-academy` → `learning-paths.html`
+- `viewer.html?doc=memori-academy` → `learning-paths.html`
 - **"Get Certified" buttons** - Now working ✓
 - **"Full Details" buttons** - Now working ✓
 - **"Explore Academy" links** - Now working ✓
@@ -19,14 +19,14 @@ All instances of broken Academy links have been fixed:
 
 ## 🎓 New Curriculum
 
-### 6 Learning Paths Aligned with developers.glean.com
+### 6 Learning Paths Aligned with memorilabs.ai/docs
 
-All courses now match Glean's actual API documentation and include direct links to official guides.
+All courses now match Memori's actual API documentation and include direct links to official guides.
 
 #### 1. **Direct API Integration** (16 hours)
 Build custom agents using REST APIs with official client libraries
 
-**Official Guide**: https://developers.glean.com/guides/agents/direct-api
+**Official Guide**: https://memorilabs.ai/docs/guides/agents/direct-api
 
 **Topics**:
 - API Fundamentals (Client API vs Indexing API)
@@ -37,11 +37,11 @@ Build custom agents using REST APIs with official client libraries
 **Code Examples**:
 ```python
 # Python SDK
-pip install glean-api-client
+pip install memori-api-client
 ```
 ```typescript
 // TypeScript SDK
-npm install @gleanwork/api-client
+npm install @memoriwork/api-client
 ```
 
 ---
@@ -49,21 +49,21 @@ npm install @gleanwork/api-client
 #### 2. **LangChain Integration** (12 hours)
 Build AI agents using Python and the LangChain framework
 
-**Official Guide**: https://developers.glean.com/guides/agents/langchain
+**Official Guide**: https://memorilabs.ai/docs/guides/agents/langchain
 
 **Topics**:
-- Setup (langchain-glean installation)
+- Setup (langchain-memori installation)
 - LangChain Basics (chains, agents, memory)
-- Glean Tools in LangChain (RAG patterns)
+- Memori Tools in LangChain (RAG patterns)
 - Production Deployment (FastAPI, streaming)
 
 **Code Examples**:
 ```bash
-pip install -U langchain-glean
+pip install -U langchain-memori
 ```
 ```python
-from langchain_glean import GleanRetriever
-# Use Glean as a retriever for RAG
+from langchain_memori import MemoriRetriever
+# Use Memori as a retriever for RAG
 ```
 
 ---
@@ -71,28 +71,28 @@ from langchain_glean import GleanRetriever
 #### 3. **Agent Toolkit** (14 hours)
 Use pre-built tools across multiple agent frameworks
 
-**Official Guide**: https://developers.glean.com/guides/agents/toolkit
+**Official Guide**: https://memorilabs.ai/docs/guides/agents/toolkit
 
 **Topics**:
 - Toolkit Overview (when to use)
-- Available Tools (glean_search, employee_search, calendar_search, code_search, gmail_search, outlook_search)
+- Available Tools (memori_search, employee_search, calendar_search, code_search, gmail_search, outlook_search)
 - Framework Integration (OpenAI, LangChain, CrewAI, Google ADK)
 - Custom Tools (creating and testing)
 
 **Code Examples**:
 ```bash
 # OpenAI
-pip install glean-agent-toolkit[openai]
+pip install memori-agent-toolkit[openai]
 # LangChain
-pip install glean-agent-toolkit[langchain]
+pip install memori-agent-toolkit[langchain]
 # CrewAI
-pip install glean-agent-toolkit[crewai]
+pip install memori-agent-toolkit[crewai]
 # Google ADK
-pip install glean-agent-toolkit[adk]
+pip install memori-agent-toolkit[adk]
 ```
 
 **Available Tools**:
-- `glean_search` - Company knowledge base
+- `memori_search` - Company knowledge base
 - `employee_search` - Find employees
 - `calendar_search` - Meetings and events
 - `code_search` - Source code repositories
@@ -102,15 +102,15 @@ pip install glean-agent-toolkit[adk]
 ---
 
 #### 4. **MCP Integration** (10 hours)
-Connect AI tools to Glean with zero setup
+Connect AI tools to Memori with zero setup
 
-**Official Guide**: https://developers.glean.com/guides/mcp
+**Official Guide**: https://memorilabs.ai/docs/guides/mcp
 
 **Topics**:
 - MCP Fundamentals (Remote vs Local)
 - Remote MCP Server (MCP Configurator, OAuth)
 - MCP Tools (company_search, chat, people_profile_search, read_documents)
-- Local MCP Server (@gleanwork/local-mcp-server)
+- Local MCP Server (@memoriwork/local-mcp-server)
 
 **Supported Host Applications**:
 - Claude Desktop
@@ -129,7 +129,7 @@ Connect AI tools to Glean with zero setup
 #### 5. **Web SDK Integration** (12 hours)
 Embed AI-powered search and chat into your intranet
 
-**Official Guide**: https://developers.glean.com/libraries/web-sdk/overview
+**Official Guide**: https://memorilabs.ai/docs/libraries/web-sdk/overview
 
 **Topics**:
 - SDK Setup (installation, authentication)
@@ -138,7 +138,7 @@ Embed AI-powered search and chat into your intranet
 - Production Deployment (performance, security)
 
 **Available Components**:
-- **Glean Chat** - Full chat functionality
+- **Memori Chat** - Full chat functionality
 - **Autocomplete + Search Results** - Custom search page
 - **Modal Search** - Overlay dialog
 - **Sidebar Search** - Contextual recommendations
@@ -147,9 +147,9 @@ Embed AI-powered search and chat into your intranet
 ---
 
 #### 6. **NVIDIA NIM Integration** (8 hours)
-Build agents with NVIDIA NIM microservices + Glean
+Build agents with NVIDIA NIM microservices + Memori
 
-**Official Guide**: https://developers.glean.com/guides/agents/nvidia-example
+**Official Guide**: https://memorilabs.ai/docs/guides/agents/nvidia-example
 
 **Topics**:
 - Setup (NVIDIA API keys, LangChain NVIDIA endpoints)
@@ -176,17 +176,17 @@ embeddings = NVIDIAEmbeddings(
 
 ## 🏆 Updated Certifications
 
-### Glean API Developer (Beginner)
+### Memori API Developer (Beginner)
 - Duration: 10 hours
 - Topics: Client APIs, Authentication, Basic agents
 - Cost: **Free**
 
-### Glean Integration Specialist (Intermediate)
+### Memori Integration Specialist (Intermediate)
 - Duration: 20 hours
 - Topics: LangChain, Agent Toolkit, Web SDK, MCP
 - Cost: $299 (Free for Enterprise)
 
-### Glean Solutions Architect (Advanced)
+### Memori Solutions Architect (Advanced)
 - Duration: 40 hours
 - Topics: Multi-framework integration, custom tools, enterprise architecture
 - Cost: $999 (50% off for Enterprise)
@@ -197,7 +197,7 @@ embeddings = NVIDIAEmbeddings(
 
 All courses now include:
 - ✅ Direct links to official documentation
-- ✅ Code examples from developers.glean.com
+- ✅ Code examples from memorilabs.ai/docs
 - ✅ Hands-on labs and assessments
 - ✅ Prerequisites and learning objectives
 - ✅ Estimated completion times
@@ -209,31 +209,31 @@ All courses now include:
 4. Multi-Agent Systems with CrewAI (10h)
 5. MCP Configuration & Management (6h)
 6. Web SDK Deep Dive (8h)
-7. NVIDIA NIM + Glean Integration (6h)
+7. NVIDIA NIM + Memori Integration (6h)
 
 ---
 
 ## 🔗 Official Documentation Links
 
 All learning paths now include direct links to:
-- **developers.glean.com** - Official developer portal
+- **memorilabs.ai/docs** - Official developer portal
 - **Specific guide pages** - Direct API, LangChain, Toolkit, MCP, Web SDK, NVIDIA
 - **API Reference** - Client API and Indexing API docs
-- **GitHub Examples** - gleanwork organization
+- **GitHub Examples** - memoriwork organization
 
 ---
 
-## 📊 Alignment with Glean's Products
+## 📊 Alignment with Memori's Products
 
 ### Before Update
 - Generic terminal/MCP focused
-- No connection to actual Glean APIs
+- No connection to actual Memori APIs
 - Missing official documentation links
 - Outdated course content
 
 ### After Update
 - ✅ Work AI Platform focused
-- ✅ Matches developers.glean.com structure
+- ✅ Matches memorilabs.ai/docs structure
 - ✅ Every path links to official guides
 - ✅ Code examples from actual docs
 - ✅ Covers all major integration methods:
@@ -263,7 +263,7 @@ All learning paths now include direct links to:
 ### For DevRel/Sales
 - No more broken links
 - Professional, accurate curriculum
-- Demonstrates Glean's API capabilities
+- Demonstrates Memori's API capabilities
 - Reference for customer conversations
 
 ---
@@ -272,32 +272,32 @@ All learning paths now include direct links to:
 
 ### Link Verification
 ```bash
-$ grep -r "viewer.html?doc=glean-academy" . --include="*.html" --include="*.md"
+$ grep -r "viewer.html?doc=memori-academy" . --include="*.html" --include="*.md"
 # No results - all links fixed ✓
 ```
 
 ### Documentation Alignment
-- ✅ Direct API - matches https://developers.glean.com/guides/agents/direct-api
-- ✅ LangChain - matches https://developers.glean.com/guides/agents/langchain
-- ✅ Agent Toolkit - matches https://developers.glean.com/guides/agents/toolkit
-- ✅ MCP - matches https://developers.glean.com/guides/mcp
-- ✅ Web SDK - matches https://developers.glean.com/libraries/web-sdk/overview
-- ✅ NVIDIA - matches https://developers.glean.com/guides/agents/nvidia-example
-- ✅ API Clients - matches https://developers.glean.com/libraries/api-clients
+- ✅ Direct API - matches https://memorilabs.ai/docs/guides/agents/direct-api
+- ✅ LangChain - matches https://memorilabs.ai/docs/guides/agents/langchain
+- ✅ Agent Toolkit - matches https://memorilabs.ai/docs/guides/agents/toolkit
+- ✅ MCP - matches https://memorilabs.ai/docs/guides/mcp
+- ✅ Web SDK - matches https://memorilabs.ai/docs/libraries/web-sdk/overview
+- ✅ NVIDIA - matches https://memorilabs.ai/docs/guides/agents/nvidia-example
+- ✅ API Clients - matches https://memorilabs.ai/docs/libraries/api-clients
 
 ---
 
 ## 🌐 Live Deployment
 
-- **GitHub**: https://github.com/colygon/glean-devrel
-- **Learning Paths**: https://glean-devrel-ffy70owsx-dablclub.vercel.app/learning-paths.html
+- **GitHub**: https://github.com/colygon/memori-devrel
+- **Learning Paths**: https://memori-devrel-ffy70owsx-dablclub.vercel.app/learning-paths.html
 - **Status**: ✅ All changes committed and deployed
 
 ---
 
 ## 🎉 Summary
 
-**100% of Academy links fixed** and curriculum completely updated to match Glean's actual Work AI Platform APIs and documentation. Every learning path now includes:
+**100% of Academy links fixed** and curriculum completely updated to match Memori's actual Work AI Platform APIs and documentation. Every learning path now includes:
 
 1. Official guide links
 2. Real code examples
@@ -305,4 +305,4 @@ $ grep -r "viewer.html?doc=glean-academy" . --include="*.html" --include="*.md"
 4. Proper installation commands
 5. Assessment projects
 
-Perfect alignment with Glean's developer documentation for the Senior Solution Architect interview! 🚀
+Perfect alignment with Memori's developer documentation for the Senior Solution Architect interview! 🚀

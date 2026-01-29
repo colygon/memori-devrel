@@ -1,131 +1,114 @@
-# Glean Developer Relations Strategy
+# Memori Developer Relations
 
-A comprehensive developer relations program for [Glean.dev](https://glean.dev) - the Work AI Platform for enterprise knowledge.
+Memori is an open-source, SQL-native memory layer for AI agents. It captures conversations, extracts structured facts, and enables semantic recall across entities, processes, and sessions with minimal code changes.
 
-## 🎯 Overview
+This repository is the DevRel hub for Memori. It includes programs, workshops, tutorials, and assets that help developers get to their first successful memory-backed interaction quickly.
 
-This repository contains the complete strategy, documentation, and resources for Glean's developer relations initiatives designed to build, engage, and empower the Glean developer community.
+## Quickstart (Python)
 
-## Developer Programs
+Prereqs
+- Python 3.10+
+- An OpenAI API key
 
-### 1. **Startup Program** (San Francisco)
-A physical space where developers can live and build together while contributing to the Glean ecosystem.
-- Duration: 3-6 month residencies
-- Location: San Francisco, CA
-- Focus: Open-source contributions, MCP development, community tools
-
-### 2. **Co-working Space & Open Office Hours**
-Weekly co-working sessions with Glean team members available for guidance and collaboration.
-- **Schedule**: Every week
-- **Format**: Hybrid (in-person SF + virtual)
-- **Topics**: Architecture discussions, debugging, feature development
-
-### 3. **Workshops Series**
-Weekly hands-on technical workshops covering Glean features, MCP development, and terminal productivity.
-- **Frequency**: Weekly
-- **Topics**: MCP server creation, Glean AI features, workflow automation, custom extensions
-- **Format**: Live coding sessions with Q&A
-
-### 4. **Monthly Hackathons**
-Community-driven hackathons focused on building innovative tools and extensions for Glean.
-- **Frequency**: Monthly
-- **Prizes**: Credits, swag, feature spotlights
-- **Themes**: MCP servers, productivity tools, integrations, AI workflows
-
-### 5. **Bounty System**
-Reward developers for creating valuable open-source projects that enhance the Glean ecosystem.
-- **Categories**: MCP servers, plugins, integrations, tutorials, documentation
-- **Rewards**: Monetary bounties based on impact and complexity
-- **Verification**: Community voting + team review
-
-### 6. **Grant Program**
-Fund innovative ideas that push Glean's capabilities forward.
-- **Application Process**: Rolling submissions with quarterly reviews
-- **Funding Range**: $5K - $50K per project
-- **Focus Areas**: Developer tools, AI integrations, accessibility, educational content
-
-### 7. **MCP Marketplace**
-A curated marketplace of verified, secure MCP servers and Glean extensions.
-- **Verification**: Security audits, code review, testing
-- **Categories**: Development tools, AI assistants, cloud integrations, data sources
-- **Features**: Ratings, reviews, installation metrics, compatibility badges
-
-## 📁 Repository Structure
+Install
 
 ```
-glean-devrel-strategy/
-├── README.md
-├── index.html                  # Main website
-├── presentation.html           # Strategy presentation
-├── docs/                       # Detailed documentation
-│   ├── hacker-house.md
-│   ├── co-working-space.md
-│   ├── workshops.md
-│   ├── hackathons.md
-│   ├── bounty-system.md
-│   ├── grant-program.md
-│   └── mcp-marketplace.md
-├── programs/                   # Program templates
-│   ├── hacker-house-application.md
-│   ├── grant-application-template.md
-│   └── bounty-submission-template.md
-├── workshops/                  # Workshop materials
-│   ├── mcp-basics/
-│   ├── glean-ai-workflows/
-│   └── extension-development/
-├── tutorials/                  # User tutorials
-│   ├── getting-started.md
-│   ├── mcp-quickstart.md
-│   └── advanced-workflows.md
-└── assets/                     # Styling and assets
-    ├── css/
-    └── images/
+pip install memori
+pip install openai
 ```
 
-## 🎓 Educational Content
+Set env var
 
-### Workshop Topics
-- Building Your First MCP Server
-- Glean AI: Advanced Workflows
-- Custom Extension Development
-- Terminal Productivity Masterclass
-- Security Best Practices for MCP
+```
+export OPENAI_API_KEY="your-api-key-here"
+```
 
-### Tutorial Series
-- Getting Started with Glean
-- MCP Quick Start Guide
-- Integrating Glean into Your Workflow
-- Advanced Glean Features Deep Dive
+Minimal example
 
-## 🤝 How to Get Involved
+```python
+import os
+import sqlite3
 
-1. **Join the Residency**: Apply at [programs/hacker-house-application.md](programs/hacker-house-application.md)
-2. **Attend Office Hours**: Check schedule in [docs/co-working-space.md](docs/co-working-space.md)
-3. **Participate in Workshops**: Register at [workshops schedule](docs/workshops.md)
-4. **Submit a Bounty**: See available bounties in [docs/bounty-system.md](docs/bounty-system.md)
-5. **Apply for a Grant**: Submit your proposal using [programs/grant-application-template.md](programs/grant-application-template.md)
-6. **Contribute to MCP Marketplace**: Review guidelines in [docs/mcp-marketplace.md](docs/mcp-marketplace.md)
+from memori import Memori
+from openai import OpenAI
 
-## 📊 Success Metrics
 
-- Number of active community contributors
-- MCP servers created and published
-- Workshop attendance and satisfaction
-- Grant projects completed
-- Bounty claims and submissions
-- Marketplace listings and downloads
+def get_sqlite_connection():
+    return sqlite3.connect("memori.db")
 
-## 🔗 Links
 
-- **Website**: [glean.dev](https://glean.dev)
-- **Documentation**: [docs.glean.dev](https://docs.glean.dev)
-- **Community Discord**: Join our community
-- **GitHub**: [github.com/gleandotdev](https://github.com/gleandotdev)
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+memori = Memori(conn=get_sqlite_connection).llm.register(client)
 
-## 📝 License
+# Required: attribution tells Memori who and what this memory belongs to.
+memori.attribution(entity_id="123456", process_id="test-ai-agent")
 
-This project is licensed under MIT License - see LICENSE file for details.
+# Build the schema once per database.
+memori.config.storage.build()
 
----
+# Write memory through normal LLM usage.
+response = client.chat.completions.create(
+    model="gpt-4.1-mini",
+    messages=[{"role": "user", "content": "My favorite color is blue."}],
+)
+print(response.choices[0].message.content + "\n")
 
-**Built with ❤️ by the Glean Community**
+# For short-lived scripts, wait for background augmentation to finish.
+memori.augmentation.wait()
+
+# Recall stored facts.
+facts = memori.recall("favorite color", limit=5)
+print(facts)
+```
+
+Optional: verify the stored facts directly in SQLite:
+
+```
+sqlite3 memori.db "select * from memori_entity_fact;"
+```
+
+Optional one-time setup (pre-downloads embeddings for faster first run):
+
+```
+python -m memori setup
+```
+
+Optional: set a Memori API key for higher Advanced Augmentation limits:
+
+```
+export MEMORI_API_KEY="your-memori-key-here"
+```
+
+## Core Concepts
+
+- Entity: a person, place, or thing (for example, a user).
+- Process: your agent, workflow, or program.
+- Session: a group of related interactions.
+- Augmentation: background memory enrichment (no extra latency).
+
+## Supported Providers and Datastores
+
+Memori is LLM, database, and framework agnostic, with first-class support for major providers and SQL databases. Today that includes OpenAI, Anthropic, Bedrock, Gemini, and Grok; frameworks like Agno and LangChain; and any DB API 2.0 compatible database driver (such as Postgres, MySQL, SQLite, and more). See the docs for the current list of providers, frameworks, and datastore integrations.
+
+## Docs and Examples
+
+- Docs and API reference: https://memorilabs.ai/docs
+- Quickstart: https://memorilabs.ai/docs/getting-started/quick-start
+- Troubleshooting: https://memorilabs.ai/docs/troubleshooting
+- Cookbook: https://github.com/MemoriLabs/memori-cookbook
+- SDK repository: https://github.com/MemoriLabs/Memori
+
+## Developer Programs and Materials (in this repo)
+
+- Programs overview: docs/
+- Workshops: workshops/
+- Tutorials: tutorials/
+- Templates: templates/
+- Assets: assets/
+
+## Contributing and Support
+
+- Issues: https://github.com/MemoriLabs/Memori/issues
+- Discord: https://discord.gg/abD4eGym6v
+
+If you are new to Memori, start with the Quickstart above, then jump into the cookbook for complete, runnable examples.
