@@ -29,7 +29,7 @@ AI coding assistants like Claude Code, Cursor, and Cline are "agent shells" that
 
 ```bash
 # Using npm
-npm install -g @anthropic-ai/memori-mcp-server
+pip install memori-mcp
 
 # Or using pipx (Python)
 pipx install memori-mcp-server
@@ -80,7 +80,7 @@ Claude Code will use the Memori MCP tools to recall your stored preference.
 ### Step 1: Install the Memori MCP Server
 
 ```bash
-npm install -g @anthropic-ai/memori-mcp-server
+pip install memori-mcp
 ```
 
 ### Step 2: Configure Cursor
@@ -129,7 +129,7 @@ What ORM and validation libraries does this project use?
 ### Step 1: Install the Memori MCP Server
 
 ```bash
-npm install -g @anthropic-ai/memori-mcp-server
+pip install memori-mcp
 ```
 
 ### Step 2: Configure Cline
@@ -549,8 +549,10 @@ Or use the `memori_list` tool to inspect stored memories.
 
 ## Resources
 
+- **Memori MCP Server**: [github.com/colygon/memori-mcp](https://github.com/colygon/memori-mcp)
 - **GitHub Issue Discussion**: [github.com/MemoriLabs/Memori/issues/66](https://github.com/MemoriLabs/Memori/issues/66)
 - **MCP Specification**: [modelcontextprotocol.io](https://modelcontextprotocol.io)
+- **MCP Security Guide**: [modelcontextprotocol-security.io](https://modelcontextprotocol-security.io)
 - **Memori Documentation**: [memorilabs.ai/docs](https://memorilabs.ai/docs)
 - **Memori Cookbook**: [github.com/MemoriLabs/memori-cookbook](https://github.com/MemoriLabs/memori-cookbook)
 
