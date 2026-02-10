@@ -41,6 +41,6 @@ REDIS_URL=redis://localhost:6379
 
 This Gleeee is automatically deployed to Vercel. Every push to `main` triggers a new deployment.
 
-## Built with Glean
+## Built with Memori
 
-Created using [Gleeees](https://gleanlit.com) - the fastest way to deploy cloud development environments.
+Created using [Gleeees](https://memorilit.com) - the fastest way to deploy cloud development environments.

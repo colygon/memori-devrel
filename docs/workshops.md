@@ -1,8 +1,8 @@
-# Glean Weekly Workshops
+# Memori Weekly Workshops
 
 ## Overview
 
-Join us every week for hands-on technical workshops covering Glean features, MCP development, terminal productivity, and more. All workshops are free and include live coding, Q&A, and recorded sessions.
+Join us every week for hands-on technical workshops covering Memori features, MCP development, terminal productivity, and more. All workshops are free and include live coding, Q&A, and recorded sessions.
 
 ## Workshop Schedule
 
@@ -14,7 +14,7 @@ Join us every week for hands-on technical workshops covering Glean features, MCP
 - **Recording**: Available within 24 hours
 
 ### Registration
-👉 [Register for upcoming workshops](https://workshops.glean.dev)
+👉 [Register for upcoming workshops](https://workshops.memorilabs.ai)
 
 ## Upcoming Workshops (Q1 2026)
 
@@ -26,11 +26,11 @@ Join us every week for hands-on technical workshops covering Glean features, MCP
 - Topics: MCP basics, server setup, first integration
 - Prerequisites: Basic Python or TypeScript knowledge
 
-**Week 2: Glean AI Workflows Deep Dive**
+**Week 2: Memori AI Workflows Deep Dive**
 - Date: January 15, 2026
 - Level: Intermediate
 - Topics: AI command generation, context optimization, custom prompts
-- Prerequisites: Familiarity with Glean
+- Prerequisites: Familiarity with Memori
 
 **Week 3: Custom Extension Development**
 - Date: January 22, 2026
@@ -58,7 +58,7 @@ Join us every week for hands-on technical workshops covering Glean features, MCP
 - Topics: LLM integration, prompt engineering, context management
 - Prerequisites: API experience
 
-**Week 3: Integrating Glean with Your Stack**
+**Week 3: Integrating Memori with Your Stack**
 - Date: February 19, 2026
 - Level: Intermediate
 - Topics: CI/CD integration, deployment automation, team workflows
@@ -68,7 +68,7 @@ Join us every week for hands-on technical workshops covering Glean features, MCP
 - Date: February 26, 2026
 - Level: All levels
 - Format: 5-minute demos from community members
-- How to participate: [Submit your demo](https://forms.glean.dev/showcase)
+- How to participate: [Submit your demo](https://forms.memorilabs.ai/showcase)
 
 ## Workshop Series
 
@@ -80,16 +80,16 @@ Master Model Context Protocol development from basics to advanced patterns.
 3. **MCP at Scale**: Performance, caching, monitoring
 4. **MCP Security**: Auth, encryption, vulnerability prevention
 
-### Glean Power User Track (4 weeks)
-Become a Glean expert and maximize your productivity.
+### Memori Power User Track (4 weeks)
+Become a Memori expert and maximize your productivity.
 
-1. **Glean Essentials**: Interface, blocks, command search
+1. **Memori Essentials**: Interface, blocks, command search
 2. **Advanced Features**: Workflows, agents, AI commands
 3. **Customization**: Themes, keybindings, settings
 4. **Team Workflows**: Sharing, collaboration, best practices
 
 ### Extension Development Track (4 weeks)
-Build powerful extensions for the Glean ecosystem.
+Build powerful extensions for the Memori ecosystem.
 
 1. **Extension Basics**: API overview, first extension
 2. **UI Components**: Custom views, panels, notifications
@@ -151,7 +151,7 @@ All workshops include:
 ### Beginner Workshops
 - Basic terminal usage
 - Text editor familiarity
-- Glean installed (we'll help!)
+- Memori installed (we'll help!)
 
 ### Intermediate Workshops
 - Comfortable with command line
@@ -166,7 +166,7 @@ All workshops include:
 ## Instructor Team
 
 Our workshops are led by:
-- **Glean Engineers**: Core team members
+- **Memori Engineers**: Core team members
 - **DevRel Team**: Developer advocates
 - **Community Experts**: Experienced contributors
 - **Guest Speakers**: Industry leaders
@@ -174,11 +174,11 @@ Our workshops are led by:
 ## Past Workshop Recordings
 
 Browse our library of past workshops:
-📚 [Workshop Archive](https://workshops.glean.dev/archive)
+📚 [Workshop Archive](https://workshops.memorilabs.ai/archive)
 
 ### Popular Recordings
 - "Building Your First MCP Server" - 2,400 views
-- "Glean AI Workflows" - 1,800 views  
+- "Memori AI Workflows" - 1,800 views  
 - "Terminal Productivity Hacks" - 3,200 views
 - "Extension Development 101" - 1,200 views
 
@@ -187,14 +187,14 @@ Browse our library of past workshops:
 Want to teach a workshop? We welcome community-led sessions!
 
 ### How to Propose a Workshop
-1. **Submit proposal**: [Workshop proposal form](https://forms.glean.dev/workshop-proposal)
+1. **Submit proposal**: [Workshop proposal form](https://forms.memorilabs.ai/workshop-proposal)
 2. **Include**: Topic, outline, duration, your background
 3. **Review**: We'll review within 1 week
 4. **Preparation**: We'll help you prepare and promote
 5. **Delivery**: We provide the platform and audience
 
 ### Benefits for Instructors
-- Reach the Glean community
+- Reach the Memori community
 - Build your personal brand
 - Get feedback from experts
 - Compensation for approved workshops
@@ -204,7 +204,7 @@ Want to teach a workshop? We welcome community-led sessions!
 
 > "The MCP workshop was exactly what I needed. The live coding format made it easy to follow along, and having access to the recording helped me review later." - Michael T.
 
-> "I went from zero to deploying my first Glean extension in one workshop. The instructors were patient and the materials were excellent." - Priya S.
+> "I went from zero to deploying my first Memori extension in one workshop. The instructors were patient and the materials were excellent." - Priya S.
 
 ## Workshop Policies
 
@@ -226,10 +226,10 @@ Want to teach a workshop? We welcome community-led sessions!
 
 ## Stay Updated
 
-- 📧 [Subscribe to workshop announcements](https://glean.dev/workshops/subscribe)
-- 📅 [Add workshop calendar](https://calendar.glean.dev/workshops.ics)
+- 📧 [Subscribe to workshop announcements](https://memorilabs.ai/workshops/subscribe)
+- 📅 [Add workshop calendar](https://calendar.memorilabs.ai/workshops.ics)
 - 💬 Discord: #workshops channel
-- 🐦 Twitter: [@GleanDevRel](https://twitter.com/gleandevrel)
+- 🐦 Twitter: [@MemoriLabs](https://twitter.com/memoridevrel)
 
 ## FAQ
 
@@ -250,4 +250,4 @@ A: Yes! We have beginner-friendly workshops every month.
 
 ---
 
-**Level up your Glean skills every Wednesday! 🎓**
+**Level up your Memori skills every Wednesday! 🎓**

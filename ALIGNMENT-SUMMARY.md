@@ -2,7 +2,7 @@
 
 ## ✅ Complete Alignment Achieved
 
-The main website (index.html) now perfectly aligns with the strategic presentation (glean-solution-architect-presentation.md) across all key dimensions.
+The main website (index.html) now perfectly aligns with the strategic presentation (memori-solution-architect-presentation.md) across all key dimensions.
 
 ---
 
@@ -132,9 +132,9 @@ The main website (index.html) now perfectly aligns with the strategic presentati
 
 | Pattern | Presentation Description | Website Implementation |
 |---------|-------------------------|----------------------|
-| **1. Embedded AI Assistant** | Add Glean-powered chat to internal applications | ✅ Identical section with React/Vue examples |
+| **1. Embedded AI Assistant** | Add Memori-powered chat to internal applications | ✅ Identical section with React/Vue examples |
 | **2. Custom AI Agents** | Build specialized agents for specific workflows | ✅ Identical section with agent use cases |
-| **3. Enterprise Search** | Add Glean search to dashboards and portals | ✅ Identical section with search integration |
+| **3. Enterprise Search** | Add Memori search to dashboards and portals | ✅ Identical section with search integration |
 | **4. Content Indexing** | Sync custom applications and data sources | ✅ Identical section with indexing examples |
 
 Each pattern on the website includes:
@@ -153,7 +153,7 @@ Each pattern on the website includes:
 
 **Days 1-30: Listen & Learn**
 - Presentation: Customer immersion, docs audit, competitive analysis
-- Website: ✅ Identical tasks + deliverable ("State of Glean APIs" report)
+- Website: ✅ Identical tasks + deliverable ("State of Memori APIs" report)
 
 **Days 31-60: Build & Ship**
 - Presentation: Fix docs, publish tutorials, create samples, launch community
@@ -170,12 +170,12 @@ Each pattern on the website includes:
 ## 🎨 Hero & Messaging Alignment
 
 ### Presentation Core Thesis:
-> "Enterprise AI apps need context. Glean provides it via APIs."
+> "Enterprise AI apps need context. Memori provides it via APIs."
 
 ### Website Hero:
 ```html
 <h1>Building the Future of Enterprise AI</h1>
-<p>Join Glean's comprehensive developer relations program designed to 
+<p>Join Memori's comprehensive developer relations program designed to 
 empower developers building AI agents, apps, and integrations on the 
 Work AI Platform.</p>
 ```
@@ -183,7 +183,7 @@ Work AI Platform.</p>
 ### Website Mission:
 ```html
 <p class="lead">Create a thriving ecosystem of developers building 
-innovative AI agents, apps, and integrations with Glean - the Work 
+innovative AI agents, apps, and integrations with Memori - the Work 
 AI Platform that brings enterprise knowledge to every employee.</p>
 ```
 
@@ -202,23 +202,23 @@ AI Platform that brings enterprise knowledge to every employee.</p>
 
 2. **"Weekly Workshops"**
    - Old: Terminal productivity
-   - New: ✅ AI agent development, Glean Apps, MCP integration
+   - New: ✅ AI agent development, Memori Apps, MCP integration
 
 3. **"Quarterly Hackathons"**
    - Old: Tools and extensions
-   - New: ✅ AI agents and apps on Glean
+   - New: ✅ AI agents and apps on Memori
 
 4. **"Bounty System"**
    - Old: MCP servers, integrations
-   - New: ✅ MCP tools, Glean Apps, integrations
+   - New: ✅ MCP tools, Memori Apps, integrations
 
 5. **"MCP Marketplace"**
-   - Old: MCP servers and Glean extensions
-   - New: ✅ MCP tools connecting Glean's enterprise knowledge to AI apps
+   - Old: MCP servers and Memori extensions
+   - New: ✅ MCP tools connecting Memori's enterprise knowledge to AI apps
 
-6. **"Gleeees" → "Glean Apps Platform"**
+6. **"Gleeees" → "Memori Apps Platform"**
    - Old: Cloud development environments
-   - New: ✅ Custom applications leveraging Glean's APIs
+   - New: ✅ Custom applications leveraging Memori's APIs
 
 ---
 
@@ -242,7 +242,7 @@ These match exactly with the presentation's 90-day targets.
 ## 🔗 Integration Pattern Links
 
 Website now includes direct links to:
-- `demo/glean-chat-demo.tsx` - Embedded AI Assistant demo
+- `demo/memori-chat-demo.tsx` - Embedded AI Assistant demo
 - `viewer.html?doc=agent-examples` - Custom AI Agents
 - `viewer.html?doc=search-examples` - Enterprise Search
 - `viewer.html?doc=indexing-examples` - Content Indexing
@@ -270,8 +270,8 @@ Website programs map to these use cases:
 ## 📦 Deliverables Consistency
 
 ### Presentation Materials:
-1. `glean-solution-architect-presentation.md` (767 lines)
-2. `demo/glean-chat-demo.tsx` (201 lines)
+1. `memori-solution-architect-presentation.md` (767 lines)
+2. `demo/memori-chat-demo.tsx` (201 lines)
 3. `demo/api-route.ts` (116 lines)
 4. `demo/mcp-setup-guide.md` (392 lines)
 5. `demo/README.md` (337 lines)
@@ -290,9 +290,9 @@ Website programs map to these use cases:
 
 ## 🌐 Live Deployment
 
-- **GitHub:** https://github.com/colygon/glean-devrel
-- **Production:** https://glean-devrel-q6da25x0a-dablclub.vercel.app
-- **Inspect:** https://vercel.com/dablclub/glean-devrel/3sjhNiyTayiRsxJJ2DgFknE5p2v3
+- **GitHub:** https://github.com/colygon/memori-devrel
+- **Production:** https://memori-devrel-q6da25x0a-dablclub.vercel.app
+- **Inspect:** https://vercel.com/dablclub/memori-devrel/3sjhNiyTayiRsxJJ2DgFknE5p2v3
 
 ✅ **All changes deployed and live**
 
@@ -321,7 +321,7 @@ Website programs map to these use cases:
 
 **100% strategic alignment achieved** between:
 - Main website (index.html)
-- Strategic presentation (glean-solution-architect-presentation.md)
+- Strategic presentation (memori-solution-architect-presentation.md)
 - Executive summary (GLEAN-INTERVIEW-SUMMARY.md)
 - Demo materials (demo/ directory)
 

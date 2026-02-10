@@ -1,4 +1,4 @@
-# Glean Grant Program Application
+# Memori Grant Program Application
 
 ## Application Guidelines
 
@@ -90,8 +90,8 @@ What makes this project novel? How does it advance the state of the art?
 
 [Your Answer]
 
-**Benefits to Glean Community:**  
-How will this project benefit Glean users and the broader ecosystem?
+**Benefits to Memori Community:**  
+How will this project benefit Memori users and the broader ecosystem?
 
 [Your Answer]
 
@@ -129,7 +129,7 @@ List all technologies, frameworks, languages, and tools you'll use.
 [Your Answer]
 
 **Integration Points:**  
-How will your project integrate with Glean? What APIs or interfaces will you use?
+How will your project integrate with Memori? What APIs or interfaces will you use?
 
 [Your Answer]
 
@@ -509,8 +509,8 @@ Please attach or provide links to:
 
 [Your Answer - 300 words max]
 
-**How did you hear about the Glean Grant Program?**
-- [ ] Glean website
+**How did you hear about the Memori Grant Program?**
+- [ ] Memori website
 - [ ] Social media
 - [ ] Newsletter
 - [ ] Community forum
@@ -534,7 +534,7 @@ By submitting this application, I/we confirm that:
 - [ ] We will participate in community engagement activities
 - [ ] We understand that funding is milestone-based
 - [ ] We will maintain proper documentation throughout the project
-- [ ] We have read and agree to the Glean Grant Program terms
+- [ ] We have read and agree to the Memori Grant Program terms
 
 **Primary Applicant Signature:**  
 [Full Name]
@@ -550,7 +550,7 @@ By submitting this application, I/we confirm that:
 
 1. Complete all sections of this application
 2. Gather all required supporting documents
-3. Email everything to: **grants@glean.dev**
+3. Email everything to: **grants@memorilabs.ai**
 4. **Subject Line:** Grant Application - [Project Title] - [Review Cycle]
 
 **Review Cycle Deadlines:**
@@ -562,17 +562,17 @@ By submitting this application, I/we confirm that:
 **What Happens Next:**
 
 1. **Initial Screening (Weeks 1-2):** Completeness and eligibility check
-2. **Technical Review (Weeks 3-4):** Deep evaluation by Glean engineers
+2. **Technical Review (Weeks 3-4):** Deep evaluation by Memori engineers
 3. **Community Input (Weeks 3-4):** Optional public summary for feedback
 4. **Panel Review (Week 5):** Final evaluation by review panel
 5. **Decision (Week 6):** Notification and feedback
 
 **Questions?**
 
-- Email: grants@glean.dev
+- Email: grants@memorilabs.ai
 - Discord: #grants channel
 - Office Hours: First Tuesday of each month, 2-4pm PT
-- Documentation: [grants.glean.dev](https://grants.glean.dev)
+- Documentation: [grants.memorilabs.ai](https://grants.memorilabs.ai)
 
 ---
 

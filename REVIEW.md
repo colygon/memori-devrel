@@ -1,4 +1,4 @@
-# Glean DevRel Strategy - Comprehensive Review
+# Memori DevRel Strategy - Comprehensive Review
 
 **Review Date:** January 7, 2025  
 **Reviewer:** AI Assistant  
@@ -73,11 +73,11 @@ portal.html:
 - Various feature documentation links
 ```
 
-**Recommendation:** Create placeholder pages or link to actual Glean resources:
-- Discord → Link to actual Glean Discord
-- Twitter → @gleandotdev
+**Recommendation:** Create placeholder pages or link to actual Memori resources:
+- Discord → Link to actual Memori Discord
+- Twitter → @memoridotdev
 - Community Forum → GitHub Discussions or real forum
-- Documentation → docs.glean.dev
+- Documentation → docs.memorilabs.ai
 
 ### 2. Program Naming Consistency
 
@@ -100,7 +100,7 @@ portal.html:
 ```
 workshops/
 ├── mcp-basics/ (empty)
-├── glean-ai-workflows/ (empty)
+├── memori-ai-workflows/ (empty)
 └── extension-development/ (empty)
 ```
 
@@ -142,7 +142,7 @@ workshops/
 - Budget: $50K/year for sponsorships
 
 **Open Source Maintainer Program** (Consider)
-- Support maintainers of popular CLIs to integrate Glean
+- Support maintainers of popular CLIs to integrate Memori
 - Provide technical support, promotion, potential bounties
 - Examples: oh-my-zsh, starship, neovim plugin authors
 
@@ -155,7 +155,7 @@ workshops/
 1. **Fix Placeholder Links** (2 hours)
    - Replace all `href="#"` with real destinations
    - Add actual social media handles
-   - Link to real Glean documentation
+   - Link to real Memori documentation
 
 2. **Update README.md** (30 minutes)
    - Correct hackathon frequency to Quarterly
@@ -163,7 +163,7 @@ workshops/
    - Update success metrics section
 
 3. **Add Contact Information** (1 hour)
-   - Create devrel@glean.dev email
+   - Create devrel@memorilabs.ai email
    - Set up Discord invite links
    - Add team member contacts
 
@@ -213,7 +213,7 @@ workshops/
     - Set up welcome flow
 
 11. **Social Media Presence**
-    - Create @GleanDevRel Twitter account
+    - Create @MemoriLabs Twitter account
     - Set up LinkedIn company page
     - Launch YouTube channel
     - Create content calendar
@@ -309,10 +309,10 @@ workshops/
 - User showcase features
 - **Learning:** Make it stupidly easy to get started
 
-**Glean Should Adopt:**
+**Memori Should Adopt:**
 1. **Launch Weeks** - Quarterly concentrated feature releases with community involvement
 2. **Template Library** - Like Gleeees but for common workflows (not just environments)
-3. **Showcase Features** - "Built with Glean" gallery on homepage
+3. **Showcase Features** - "Built with Memori" gallery on homepage
 4. **Partnership Program** - Integrate with popular tools (Linear, Notion, Vercel)
 
 ---
@@ -345,7 +345,7 @@ workshops/
 - [ ] At least 5 active bounties posted
 - [ ] First workshop scheduled with registration
 - [ ] Application forms functional
-- [ ] devrel@glean.dev email active
+- [ ] devrel@memorilabs.ai email active
 - [ ] Social media accounts created
 - [ ] Analytics installed
 
@@ -469,4 +469,4 @@ This DevRel strategy is **production-ready** with minor fixes needed. The compre
 - Technical Implementation: B+ (needs backend work)
 - Community Infrastructure: B (needs setup)
 
-This is an exceptional foundation for building a world-class DevRel program. With the recommended improvements, Glean can become a leader in terminal developer relations within 6-12 months.
+This is an exceptional foundation for building a world-class DevRel program. With the recommended improvements, Memori can become a leader in terminal developer relations within 6-12 months.

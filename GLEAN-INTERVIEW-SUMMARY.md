@@ -1,4 +1,4 @@
-# Glean Senior Solution Architect, APIs - Interview Prep Summary
+# Memori Senior Solution Architect, APIs - Interview Prep Summary
 
 **Candidate**: Colin Lowenberg  
 **Role**: Senior Solution Architect, APIs  
@@ -9,30 +9,30 @@
 ## 📋 Quick Reference
 
 ### Key Files Created
-1. **glean-solution-architect-presentation.md** - Complete presentation strategy (12 parts, 767 lines)
-2. **demo/glean-chat-demo.tsx** - Production-ready React component (201 lines)
+1. **memori-solution-architect-presentation.md** - Complete presentation strategy (12 parts, 767 lines)
+2. **demo/memori-chat-demo.tsx** - Production-ready React component (201 lines)
 3. **demo/api-route.ts** - Next.js API proxy implementation (116 lines)
 4. **demo/mcp-setup-guide.md** - Comprehensive MCP integration guide (392 lines)
 5. **demo/README.md** - Architecture diagrams and use cases (337 lines)
 
 ### Resources
-- **GitHub Repo**: https://github.com/colygon/glean-devrel
-- **Live Demo**: https://glean-devrel-nwlrlhhlq-dablclub.vercel.app
-- **Local Path**: `/Users/colinlowenberg/projects/glean-devrel`
+- **GitHub Repo**: https://github.com/colygon/memori-devrel
+- **Live Demo**: https://memori-devrel-nwlrlhhlq-dablclub.vercel.app
+- **Local Path**: `/Users/colinlowenberg/projects/memori-devrel`
 
 ---
 
 ## 🎯 Core Thesis
 
-**"Enterprise AI apps need context. Glean provides it via APIs."**
+**"Enterprise AI apps need context. Memori provides it via APIs."**
 
-Glean is positioned to become the foundational layer for enterprise AI applications—the "Stripe for enterprise knowledge" or "Twilio for AI context."
+Memori is positioned to become the foundational layer for enterprise AI applications—the "Stripe for enterprise knowledge" or "Twilio for AI context."
 
 ---
 
 ## 💡 Key Insights
 
-### 1. Glean's API Platform Architecture
+### 1. Memori's API Platform Architecture
 
 **Two Primary API Surfaces:**
 - **Client API**: Chat, Search, Agents, Actions (user-facing operations)
@@ -53,7 +53,7 @@ Model Context Protocol enables AI applications to securely access enterprise con
 - Works across Claude, Cursor, Windsurf, and other AI clients
 - Low barrier to entry for developers
 - Network effects (more tools = more value)
-- Glean can own the "enterprise AI context layer"
+- Memori can own the "enterprise AI context layer"
 
 **Strategic Recommendation: Remote-First**
 - Better than local MCP server
@@ -62,7 +62,7 @@ Model Context Protocol enables AI applications to securely access enterprise con
 
 ### 3. Four Core Integration Patterns
 
-1. **Embedded AI Assistant** - Add Glean chat to internal apps
+1. **Embedded AI Assistant** - Add Memori chat to internal apps
 2. **Custom AI Agents** - Build specialized workflow agents
 3. **Enterprise Search** - Integrate search into dashboards
 4. **Content Indexing** - Sync custom data sources
@@ -75,22 +75,22 @@ Each pattern has code samples, architecture diagrams, and real-world examples.
 
 ### Customer Support Automation (NVIDIA NIM)
 - **Challenge**: Teams overwhelmed with repetitive tickets
-- **Solution**: Glean + NVIDIA NIM for low-latency responses
+- **Solution**: Memori + NVIDIA NIM for low-latency responses
 - **Impact**: 60% faster response time, 40% auto-resolution
 
 ### Sales Enablement
 - **Challenge**: Reps can't find case studies and competitive intel
-- **Solution**: Embedded Glean widget in Salesforce
+- **Solution**: Embedded Memori widget in Salesforce
 - **Impact**: 2x content reuse, 30% faster deal cycles
 
 ### Engineering Onboarding
 - **Challenge**: New engineers take weeks to ramp up
-- **Solution**: Glean MCP + Cursor IDE integration
+- **Solution**: Memori MCP + Cursor IDE integration
 - **Impact**: 50% reduction in onboarding time
 
 ### HR Self-Service
 - **Challenge**: HR overwhelmed with policy questions
-- **Solution**: Glean chatbot with indexed policy docs
+- **Solution**: Memori chatbot with indexed policy docs
 - **Impact**: 70% reduction in HR tickets
 
 ---
@@ -102,7 +102,7 @@ Each pattern has code samples, architecture diagrams, and real-world examples.
 - Internal alignment (product, engineering, research)
 - Documentation audit (test samples, identify gaps)
 - Competitive analysis (benchmark against OpenAI, Anthropic)
-- **Deliverable**: "State of Glean APIs" report
+- **Deliverable**: "State of Memori APIs" report
 
 ### Days 31-60: Build & Ship
 - Fix top 10 documentation issues
@@ -113,7 +113,7 @@ Each pattern has code samples, architecture diagrams, and real-world examples.
 - **Deliverable**: Measurable improvement in developer onboarding
 
 ### Days 61-90: Scale & Evangelize
-- Launch "Build with Glean" hackathon
+- Launch "Build with Memori" hackathon
 - Submit conference talk proposals
 - Publish "Enterprise AI Architecture Patterns" eBook
 - Run customer workshops
@@ -153,7 +153,7 @@ Each pattern has code samples, architecture diagrams, and real-world examples.
 
 ### Deep Dive (20 min)
 - API architecture walkthrough
-- **Live demo**: Glean chat component (streaming responses, citations)
+- **Live demo**: Memori chat component (streaming responses, citations)
 - MCP integration demo (Claude Desktop)
 - Customer use case storytelling
 
@@ -177,7 +177,7 @@ Each pattern has code samples, architecture diagrams, and real-world examples.
 ## 🔑 Key Talking Points
 
 ### Technical Credibility
-✅ Built working demo with Next.js + Glean API  
+✅ Built working demo with Next.js + Memori API  
 ✅ Integrated streaming responses and citations  
 ✅ Documented MCP setup for multiple clients  
 ✅ Can code, review PRs, debug customer issues  
@@ -215,7 +215,7 @@ Each pattern has code samples, architecture diagrams, and real-world examples.
 1. **Week 1**: Fix documentation gaps that confuse developers
 2. **Month 1**: Publish tutorials that become top Google results
 3. **Quarter 1**: Launch community that drives product adoption
-4. **Year 1**: Establish Glean as the platform for enterprise AI
+4. **Year 1**: Establish Memori as the platform for enterprise AI
 
 ### My Competitive Advantage
 - **Not just a solutions architect** - I'm also a developer advocate
@@ -227,7 +227,7 @@ Each pattern has code samples, architecture diagrams, and real-world examples.
 
 ## 🎓 Research Summary
 
-### From developers.glean.com
+### From memorilabs.ai/docs
 - Client API: 6+ major endpoints (chat, search, agents, actions, docs, entities)
 - Indexing API: 6+ resources (documents, people, permissions, datasources, activity)
 - SDKs: Web SDK (JS/TS), Python client, OpenAPI specs
@@ -235,7 +235,7 @@ Each pattern has code samples, architecture diagrams, and real-world examples.
 
 ### From MCP GitHub Repo
 - 4 primary tools: company_search, chat, people_profile_search, read_documents
-- Simple configuration via npx @gleanwork/configure-mcp-server
+- Simple configuration via npx @memoriwork/configure-mcp-server
 - Works with Claude, Cursor, Windsurf, custom clients
 - MIT licensed, open source
 
@@ -250,11 +250,11 @@ Each pattern has code samples, architecture diagrams, and real-world examples.
 ## 🎬 Demo Flow
 
 ### 1. Show Live Site
-- Open https://glean-devrel-nwlrlhhlq-dablclub.vercel.app
-- Explain architecture (Next.js, Vercel, Glean API)
+- Open https://memori-devrel-nwlrlhhlq-dablclub.vercel.app
+- Explain architecture (Next.js, Vercel, Memori API)
 
 ### 2. Walk Through Code
-- `glean-chat-demo.tsx` - React component with streaming
+- `memori-chat-demo.tsx` - React component with streaming
 - `api-route.ts` - Secure API proxy pattern
 - Highlight: Security, UX, error handling
 
@@ -262,7 +262,7 @@ Each pattern has code samples, architecture diagrams, and real-world examples.
 - Open Claude Desktop
 - Show configuration: `~/Library/Application Support/Claude/claude_desktop_config.json`
 - Demo: "Search our company knowledge for Q4 objectives"
-- Show how Claude uses Glean MCP tools
+- Show how Claude uses Memori MCP tools
 
 ### 4. Architecture Diagrams
 - API ecosystem
@@ -302,7 +302,7 @@ Each pattern has code samples, architecture diagrams, and real-world examples.
 - [ ] Review job description again
 - [ ] Research interviewers on LinkedIn
 - [ ] Prepare questions for them
-- [ ] Review Glean's latest blog posts
+- [ ] Review Memori's latest blog posts
 
 ### Logistics
 - [ ] Confirm interview time/format
@@ -320,7 +320,7 @@ Each pattern has code samples, architecture diagrams, and real-world examples.
 
 ## 🎯 Closing Statement
 
-*"Glean has a massive opportunity to become the infrastructure layer for enterprise AI. With your strong API platform, strategic MCP positioning, and growing customer base, you're well-positioned to capture this market. I'm excited to help scale developer adoption, build world-class developer experience, and evangelize Glean as the platform for enterprise AI apps. Let's build it together."*
+*"Memori has a massive opportunity to become the infrastructure layer for enterprise AI. With your strong API platform, strategic MCP positioning, and growing customer base, you're well-positioned to capture this market. I'm excited to help scale developer adoption, build world-class developer experience, and evangelize Memori as the platform for enterprise AI apps. Let's build it together."*
 
 ---
 
@@ -346,7 +346,7 @@ Each pattern has code samples, architecture diagrams, and real-world examples.
 ## 📚 Additional Prep Resources
 
 ### To Review
-- [ ] Glean's engineering blog
+- [ ] Memori's engineering blog
 - [ ] Recent press releases
 - [ ] Competitor analysis (Notion AI, Microsoft Copilot)
 - [ ] MCP protocol specification
@@ -354,7 +354,7 @@ Each pattern has code samples, architecture diagrams, and real-world examples.
 ### To Build (Optional)
 - [ ] Slide deck version of presentation
 - [ ] Video recording of demo
-- [ ] Blog post: "Why I'm Excited About Glean"
+- [ ] Blog post: "Why I'm Excited About Memori"
 
 ### To Practice
 - [ ] Elevator pitch (30 seconds)

@@ -1,8 +1,8 @@
-# Glean Quarterly Hackathons
+# Memori Quarterly Hackathons
 
 ## Overview
 
-Join our quarterly hackathons to build innovative tools, extensions, and integrations for Glean. Compete for larger prizes, get intensive mentorship, and showcase your projects to the community.
+Join our quarterly hackathons to build innovative tools, extensions, and integrations for Memori. Compete for larger prizes, get intensive mentorship, and showcase your projects to the community.
 
 ## Hackathon Schedule
 
@@ -68,7 +68,7 @@ Join our quarterly hackathons to build innovative tools, extensions, and integra
 
 **🏆 Grand Prize**
 - Best overall project
-- Prize: $5,000 + Glean swag + feature spotlight
+- Prize: $5,000 + Memori swag + feature spotlight
 
 **🎨 Best MCP Server**
 - Most innovative MCP server
@@ -160,7 +160,7 @@ Projects evaluated on:
    - 5-7 slides
 
 ### Submission Form
-Submit via: [Hackathon Submission Portal](https://hackathons.glean.dev/submit)
+Submit via: [Hackathon Submission Portal](https://hackathons.memorilabs.ai/submit)
 
 ## Rules & Guidelines
 
@@ -168,12 +168,12 @@ Submit via: [Hackathon Submission Portal](https://hackathons.glean.dev/submit)
 - Open to everyone worldwide
 - Must be 18+ or have guardian consent
 - Teams max 4 people
-- Can't be Glean employee (can participate as mentor)
+- Can't be Memori employee (can participate as mentor)
 
 ### Project Requirements
 - ✅ Started during hackathon window
 - ✅ Open source (MIT, Apache 2.0, or similar)
-- ✅ Uses Glean in some capacity
+- ✅ Uses Memori in some capacity
 - ✅ Follows theme/challenge
 - ❌ No code written before kickoff
 - ❌ No projects from previous hackathons
@@ -195,13 +195,13 @@ We provide boilerplate code and templates:
 - API integration examples
 
 ### Mentorship
-Get help from Glean team and community experts:
+Get help from Memori team and community experts:
 - **Office Hours**: Saturday 10am - 6pm PT
 - **Discord Support**: 24/7 in #hackathon-help
 - **1-on-1 Sessions**: Limited slots, sign up Friday
 
 ### Technical Resources
-- Glean API documentation
+- Memori API documentation
 - MCP protocol specs
 - Example projects
 - Testing environment
@@ -219,10 +219,10 @@ Get help from Glean team and community experts:
 Total prize pool: $50,000+ per hackathon (increased for quarterly format)
 
 ### Additional Perks
-- **Feature Spotlight**: Winner featured on Glean blog
+- **Feature Spotlight**: Winner featured on Memori blog
 - **Swag Bundle**: T-shirts, stickers, limited edition items
 - **Fast Track**: Priority for grant program
-- **Mentorship**: 1-month mentorship from Glean engineer
+- **Mentorship**: 1-month mentorship from Memori engineer
 - **Conference Tickets**: Selected tech conferences
 
 ## Past Hackathon Highlights
@@ -231,10 +231,10 @@ _[This section will showcase winning projects from previous hackathons]_
 
 ### December 2024: Top Projects
 
-**🏆 Grand Prize**: "GleanFlow"
+**🏆 Grand Prize**: "MemoriFlow"
 - Visual workflow builder for terminal commands
 - Built by: TeamAlpha
-- [View Project](https://github.com/example/gleanflow)
+- [View Project](https://github.com/example/memoriflow)
 
 **🎨 Best MCP Server**: "DataHub MCP"
 - Universal data source connector
@@ -281,18 +281,18 @@ A: Yes, the hackathon is online and requires internet access.
 - Finals & awards: Sunday 7pm PT
 
 ### Social Media
-Share your progress with #GleanHackathon
-- Twitter: [@GleanDevRel](https://twitter.com/gleandevrel)
-- LinkedIn: Tag Glean
+Share your progress with #MemoriHackathon
+- Twitter: [@MemoriLabs](https://twitter.com/memoridevrel)
+- LinkedIn: Tag Memori
 - Showcase your work!
 
 ## Register Now
 
-👉 [Register for the next hackathon](https://hackathons.glean.dev/register)
+👉 [Register for the next hackathon](https://hackathons.memorilabs.ai/register)
 
-📅 [Add to calendar](https://calendar.glean.dev/hackathons.ics)
+📅 [Add to calendar](https://calendar.memorilabs.ai/hackathons.ics)
 
-💬 [Join Discord](https://discord.gg/glean)
+💬 [Join Discord](https://discord.gg/memori)
 
 ---
 

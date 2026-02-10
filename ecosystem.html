@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glean Ecosystem - Integrations & Tools</title>
+    <title>Memori Ecosystem - Integrations & Tools</title>
     <link rel="stylesheet" href="assets/css/portal.css">
     <style>
         .integration-grid {
@@ -206,7 +206,7 @@
     <header class="portal-header">
         <nav class="portal-nav">
             <div class="logo">
-                <h1>⚡ Glean Ecosystem</h1>
+                <h1>⚡ Memori Ecosystem</h1>
             </div>
             <ul class="nav-links">
                 <li><a href="portal.html">Portal Home</a></li>
@@ -219,71 +219,94 @@
 
     <section class="hero-portal">
         <div class="hero-content">
-            <h1>Glean Ecosystem</h1>
-            <p class="hero-subtitle">Powerful integrations that extend Glean's capabilities and connect your entire development workflow</p>
+            <h1>Memori Ecosystem</h1>
+            <p class="hero-subtitle">Integrations that power memory-first AI across databases, LLMs, and frameworks</p>
         </div>
     </section>
 
     <section id="integrations" class="section section-light">
         <div class="container">
             <h2>Integrations</h2>
-            <p class="section-intro">Connect Glean with the tools you love</p>
+            <p class="section-intro">Connect Memori memory with the tools you already use</p>
             
             <div class="category-filter">
                 <button class="filter-btn active" data-category="all">All</button>
-                <button class="filter-btn" data-category="ai">AI & Agents</button>
-                <button class="filter-btn" data-category="devtools">Dev Tools</button>
-                <button class="filter-btn" data-category="cloud">Cloud & Infrastructure</button>
-                <button class="filter-btn" data-category="productivity">Productivity</button>
+                <button class="filter-btn" data-category="ai">LLM Providers</button>
+                <button class="filter-btn" data-category="devtools">Databases</button>
+                <button class="filter-btn" data-category="cloud">Frameworks</button>
+                <button class="filter-btn" data-category="productivity">Memory Tooling</button>
             </div>
 
             <div class="integration-grid">
-                <!-- Gleeees -->
-                <div class="integration-card" data-category="cloud">
-                    <div class="integration-card::before"></div>
+                <!-- SQL Databases -->
+                <div class="integration-card" data-category="devtools">
                     <div class="integration-header">
-                        <span class="integration-icon">🚀</span>
+                        <span class="integration-icon">🗄️</span>
                         <div class="integration-title">
-                            <h3>Gleeees</h3>
-                            <span class="integration-category">Cloud Development</span>
+                            <h3>PostgreSQL & MySQL</h3>
+                            <span class="integration-category">SQL-Native Memory</span>
                         </div>
                     </div>
                     <p class="integration-description">
-                        Deploy instant cloud development environments with one command. Pre-configured workspaces for any tech stack on AWS, GCP, Azure, and more.
+                        Store structured memory directly in your SQL database with native schemas, governance, and performance tuning.
                     </p>
                     <ul class="integration-features">
-                        <li>Auto-Gleanify on SSH connection</li>
-                        <li>Multi-cloud deployment</li>
-                        <li>Template marketplace</li>
-                        <li>Cost tracking & auto-destroy</li>
-                    </ul>
-                    <div class="integration-footer">
-                        <span class="integration-status status-coming">Coming Soon</span>
-                        <a href="gleeees.html" class="btn btn-outline">View Prototype</a>
-                    </div>
-                </div>
-
-                <!-- Glean Drive -->
-                <div class="integration-card" data-category="productivity">
-                    <div class="integration-header">
-                        <span class="integration-icon">💾</span>
-                        <div class="integration-title">
-                            <h3>Glean Drive</h3>
-                            <span class="integration-category">Knowledge Management</span>
-                        </div>
-                    </div>
-                    <p class="integration-description">
-                        Your workspace in the terminal for saving workflows, notebooks, prompts, and environment variables. Share with teams or keep personal.
-                    </p>
-                    <ul class="integration-features">
-                        <li>Sync workflows & notebooks</li>
-                        <li>Team collaboration</li>
-                        <li>AI context integration</li>
-                        <li>Import/export (YAML, Markdown)</li>
+                        <li>SQL-native storage and queries</li>
+                        <li>Transaction-level consistency</li>
+                        <li>TTL and retention policies</li>
+                        <li>Enterprise auditability</li>
                     </ul>
                     <div class="integration-footer">
                         <span class="integration-status status-live">Live</span>
-                        <a href="https://docs.glean.dev/knowledge-and-collaboration/glean-drive" class="btn btn-outline">Documentation</a>
+                        <a href="https://memorilabs.ai/docs" class="btn btn-outline">Documentation</a>
+                    </div>
+                </div>
+
+                <!-- MongoDB -->
+                <div class="integration-card" data-category="devtools">
+                    <div class="integration-header">
+                        <span class="integration-icon">📄</span>
+                        <div class="integration-title">
+                            <h3>MongoDB</h3>
+                            <span class="integration-category">Document Memory</span>
+                        </div>
+                    </div>
+                    <p class="integration-description">
+                        Use Memori with MongoDB for flexible memory schemas and fast iteration on memory models.
+                    </p>
+                    <ul class="integration-features">
+                        <li>Document-based memory stores</li>
+                        <li>Schema evolution support</li>
+                        <li>Hybrid relational mapping</li>
+                        <li>Atlas-ready deployments</li>
+                    </ul>
+                    <div class="integration-footer">
+                        <span class="integration-status status-live">Live</span>
+                        <a href="https://memorilabs.ai/blog/memory-for-ai-agents-with-mongodb/" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- SQLite -->
+                <div class="integration-card" data-category="devtools">
+                    <div class="integration-header">
+                        <span class="integration-icon">📦</span>
+                        <div class="integration-title">
+                            <h3>SQLite</h3>
+                            <span class="integration-category">Local Memory</span>
+                        </div>
+                    </div>
+                    <p class="integration-description">
+                        Lightweight, embedded memory for local agents and offline workflows.
+                    </p>
+                    <ul class="integration-features">
+                        <li>Zero-config local storage</li>
+                        <li>Offline memory retention</li>
+                        <li>Fast prototyping</li>
+                        <li>Single-file persistence</li>
+                    </ul>
+                    <div class="integration-footer">
+                        <span class="integration-status status-live">Live</span>
+                        <a href="https://memorilabs.ai/docs" class="btn btn-outline">Documentation</a>
                     </div>
                 </div>
 
@@ -293,21 +316,21 @@
                         <span class="integration-icon">🤖</span>
                         <div class="integration-title">
                             <h3>Claude (Anthropic)</h3>
-                            <span class="integration-category">AI Agent</span>
+                            <span class="integration-category">LLM Provider</span>
                         </div>
                     </div>
                     <p class="integration-description">
-                        Use Claude Sonnet and Opus models for code generation, debugging, and command suggestions. Available as an AI agent in Glean.
+                        Use Claude models with Memori memory for grounded, personalized responses and lower token usage.
                     </p>
                     <ul class="integration-features">
-                        <li>Code writing & refactoring</li>
-                        <li>Complex debugging</li>
-                        <li>Multi-step task execution</li>
-                        <li>Context-aware responses</li>
+                        <li>Memory-aware prompting</li>
+                        <li>Streaming and async support</li>
+                        <li>Cross-session context</li>
+                        <li>Explainable recall</li>
                     </ul>
                     <div class="integration-footer">
                         <span class="integration-status status-live">Live</span>
-                        <a href="https://docs.glean.dev/agents/agents-overview" class="btn btn-outline">Learn More</a>
+                        <a href="https://memorilabs.ai/docs" class="btn btn-outline">Learn More</a>
                     </div>
                 </div>
 
@@ -317,21 +340,21 @@
                         <span class="integration-icon">✨</span>
                         <div class="integration-title">
                             <h3>OpenAI (GPT-4/5)</h3>
-                            <span class="integration-category">AI Agent</span>
+                            <span class="integration-category">LLM Provider</span>
                         </div>
                     </div>
                     <p class="integration-description">
-                        Access GPT-4, GPT-4o, and GPT-5 models directly in Glean. Fast command generation, script writing, and natural language query responses.
+                        Use OpenAI models with structured memory for personalized experiences and cost-efficient context.
                     </p>
                     <ul class="integration-features">
-                        <li>GPT-5 support (latest)</li>
-                        <li>Streaming responses</li>
-                        <li>Command explanations</li>
-                        <li>Quick terminal assistance</li>
+                        <li>Memory-first prompt injection</li>
+                        <li>Selective recall</li>
+                        <li>Attribution tracking</li>
+                        <li>Async/sync support</li>
                     </ul>
                     <div class="integration-footer">
                         <span class="integration-status status-live">Live</span>
-                        <a href="https://docs.glean.dev/agents/agents-overview" class="btn btn-outline">Learn More</a>
+                        <a href="https://memorilabs.ai/docs" class="btn btn-outline">Learn More</a>
                     </div>
                 </div>
 
@@ -341,189 +364,117 @@
                         <span class="integration-icon">💎</span>
                         <div class="integration-title">
                             <h3>Google Gemini</h3>
-                            <span class="integration-category">AI Agent</span>
+                            <span class="integration-category">LLM Provider</span>
                         </div>
                     </div>
                     <p class="integration-description">
-                        Integrate Google's Gemini models for multimodal AI capabilities. Process images, analyze code, and get comprehensive technical assistance.
+                        Integrate Gemini models with Memori memory for multimodal, context-rich workflows.
                     </p>
                     <ul class="integration-features">
-                        <li>Multimodal support</li>
-                        <li>Code analysis</li>
-                        <li>Large context windows</li>
+                        <li>Memory-backed context</li>
+                        <li>Multimodal recall</li>
+                        <li>Context compression</li>
                         <li>Fast inference</li>
                     </ul>
                     <div class="integration-footer">
                         <span class="integration-status status-live">Live</span>
-                        <a href="https://docs.glean.dev/agents/agents-overview" class="btn btn-outline">Learn More</a>
+                        <a href="https://memorilabs.ai/docs" class="btn btn-outline">Learn More</a>
                     </div>
                 </div>
 
-                <!-- Docker -->
-                <div class="integration-card" data-category="devtools">
+                <!-- LangChain -->
+                <div class="integration-card" data-category="cloud">
                     <div class="integration-header">
-                        <span class="integration-icon">🐳</span>
+                        <span class="integration-icon">🧩</span>
                         <div class="integration-title">
-                            <h3>Docker</h3>
-                            <span class="integration-category">Containerization</span>
+                            <h3>LangChain</h3>
+                            <span class="integration-category">Framework</span>
                         </div>
                     </div>
                     <p class="integration-description">
-                        Seamless Docker commands with AI-powered assistance. Get help with Dockerfiles, compose files, and container management.
+                        Native integration with LangChain to persist memory across chains and agents.
                     </p>
                     <ul class="integration-features">
-                        <li>Dockerfile generation</li>
-                        <li>Container debugging</li>
-                        <li>Compose file assistance</li>
-                        <li>Best practices guidance</li>
+                        <li>Drop-in memory adapters</li>
+                        <li>Tool and agent support</li>
+                        <li>Async/streaming compatibility</li>
+                        <li>Memory-first prompts</li>
                     </ul>
                     <div class="integration-footer">
                         <span class="integration-status status-live">Live</span>
-                        <a href="#" class="btn btn-outline">Documentation</a>
+                        <a href="https://memorilabs.ai/docs" class="btn btn-outline">Documentation</a>
                     </div>
                 </div>
 
-                <!-- VS Code -->
-                <div class="integration-card" data-category="devtools">
+                <!-- PydanticAI -->
+                <div class="integration-card" data-category="cloud">
                     <div class="integration-header">
-                        <span class="integration-icon">💻</span>
+                        <span class="integration-icon">✅</span>
                         <div class="integration-title">
-                            <h3>VS Code</h3>
-                            <span class="integration-category">Code Editor</span>
+                            <h3>PydanticAI</h3>
+                            <span class="integration-category">Framework</span>
                         </div>
                     </div>
                     <p class="integration-description">
-                        Open projects in VS Code directly from Glean. API-first workflow with seamless editor integration for the best of both worlds.
+                        Memory-first agents with type-safe workflows and structured recall.
                     </p>
                     <ul class="integration-features">
-                        <li>Quick project opening</li>
-                        <li>Integrated terminal</li>
-                        <li>Command palette sync</li>
-                        <li>Workspace management</li>
+                        <li>Typed memory models</li>
+                        <li>Validation and guardrails</li>
+                        <li>Structured retrieval</li>
+                        <li>Production-ready patterns</li>
                     </ul>
                     <div class="integration-footer">
                         <span class="integration-status status-live">Live</span>
-                        <a href="#" class="btn btn-outline">Documentation</a>
+                        <a href="https://memorilabs.ai/docs" class="btn btn-outline">Documentation</a>
                     </div>
                 </div>
 
-                <!-- JetBrains -->
-                <div class="integration-card" data-category="devtools">
+                <!-- Memory Intelligence -->
+                <div class="integration-card" data-category="productivity">
                     <div class="integration-header">
                         <span class="integration-icon">🧠</span>
                         <div class="integration-title">
-                            <h3>JetBrains IDEs</h3>
-                            <span class="integration-category">Code Editor</span>
+                            <h3>Memori Intelligence</h3>
+                            <span class="integration-category">Memory Tooling</span>
                         </div>
                     </div>
                     <p class="integration-description">
-                        Launch IntelliJ IDEA, PyCharm, WebStorm, and other JetBrains IDEs from Glean. Smart project detection and workspace integration.
+                        Background augmentation that enriches memory with facts, preferences, and relationships.
                     </p>
                     <ul class="integration-features">
-                        <li>IDE launcher commands</li>
-                        <li>Project detection</li>
-                        <li>Recent projects access</li>
-                        <li>Configuration sync</li>
-                    </ul>
-                    <div class="integration-footer">
-                        <span class="integration-status status-live">Live</span>
-                        <a href="#" class="btn btn-outline">Documentation</a>
-                    </div>
-                </div>
-
-                <!-- Raycast -->
-                <div class="integration-card" data-category="productivity">
-                    <div class="integration-header">
-                        <span class="integration-icon">⚡</span>
-                        <div class="integration-title">
-                            <h3>Raycast</h3>
-                            <span class="integration-category">Launcher</span>
-                        </div>
-                    </div>
-                    <p class="integration-description">
-                        Execute Glean commands and workflows directly from Raycast. Quick access to your favorite terminal actions without leaving your keyboard.
-                    </p>
-                    <ul class="integration-features">
-                        <li>Launch Glean commands</li>
-                        <li>Workflow triggers</li>
-                        <li>Recent blocks access</li>
-                        <li>Quick SSH connections</li>
+                        <li>Zero-latency augmentation</li>
+                        <li>Explainable memory lineage</li>
+                        <li>Entity relationship graphs</li>
+                        <li>Usage analytics</li>
                     </ul>
                     <div class="integration-footer">
                         <span class="integration-status status-beta">Beta</span>
-                        <a href="#" class="btn btn-outline">Install Extension</a>
+                        <a href="https://memorilabs.ai/docs" class="btn btn-outline">Learn More</a>
                     </div>
                 </div>
 
-                <!-- n8n -->
+                <!-- Memory Vault -->
                 <div class="integration-card" data-category="productivity">
                     <div class="integration-header">
-                        <span class="integration-icon">🔄</span>
+                        <span class="integration-icon">🔐</span>
                         <div class="integration-title">
-                            <h3>n8n</h3>
-                            <span class="integration-category">Automation</span>
+                            <h3>Memory Vault</h3>
+                            <span class="integration-category">Security</span>
                         </div>
                     </div>
                     <p class="integration-description">
-                        Automate terminal workflows with n8n. Trigger Glean commands, capture output, and integrate with 300+ other services for powerful automation.
+                        Secure memory for sensitive data with PCI and SOC2-ready controls.
                     </p>
                     <ul class="integration-features">
-                        <li>Execute Glean workflows</li>
-                        <li>Capture command output</li>
-                        <li>Scheduled automation</li>
-                        <li>Multi-service integration</li>
-                    </ul>
-                    <div class="integration-footer">
-                        <span class="integration-status status-coming">Coming Soon</span>
-                        <a href="#" class="btn btn-outline">Documentation</a>
-                    </div>
-                </div>
-
-                <!-- GitHub -->
-                <div class="integration-card" data-category="devtools">
-                    <div class="integration-header">
-                        <span class="integration-icon">🐙</span>
-                        <div class="integration-title">
-                            <h3>GitHub</h3>
-                            <span class="integration-category">Version Control</span>
-                        </div>
-                    </div>
-                    <p class="integration-description">
-                        Enhanced git and GitHub CLI integration. AI-powered commit messages, PR management, and issue tracking directly from your terminal.
-                    </p>
-                    <ul class="integration-features">
-                        <li>AI-generated commits</li>
-                        <li>PR creation & review</li>
-                        <li>Issue management</li>
-                        <li>GitHub Actions triggers</li>
+                        <li>PII redaction</li>
+                        <li>Role-based access control</li>
+                        <li>Audit trails</li>
+                        <li>Retention policies</li>
                     </ul>
                     <div class="integration-footer">
                         <span class="integration-status status-live">Live</span>
-                        <a href="#" class="btn btn-outline">Documentation</a>
-                    </div>
-                </div>
-
-                <!-- Kubernetes -->
-                <div class="integration-card" data-category="cloud">
-                    <div class="integration-header">
-                        <span class="integration-icon">☸️</span>
-                        <div class="integration-title">
-                            <h3>Kubernetes</h3>
-                            <span class="integration-category">Orchestration</span>
-                        </div>
-                    </div>
-                    <p class="integration-description">
-                        Simplified Kubernetes management with AI assistance. Get help with kubectl commands, YAML files, and cluster debugging.
-                    </p>
-                    <ul class="integration-features">
-                        <li>kubectl command help</li>
-                        <li>YAML generation</li>
-                        <li>Pod debugging</li>
-                        <li>Resource management</li>
-                    </ul>
-                    <div class="integration-footer">
-                        <span class="integration-status status-live">Live</span>
-                        <a href="#" class="btn btn-outline">Documentation</a>
+                        <a href="https://memorilabs.ai/docs" class="btn btn-outline">Documentation</a>
                     </div>
                 </div>
             </div>
@@ -536,20 +487,20 @@
                 <h3>Growing Ecosystem</h3>
                 <div class="stats-grid">
                     <div class="stat-item">
-                        <div class="stat-number">12+</div>
-                        <div class="stat-label">Official Integrations</div>
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Datastores Supported</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">5</div>
-                        <div class="stat-label">AI Models Supported</div>
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">LLM Providers</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">300+</div>
-                        <div class="stat-label">MCP Servers Available</div>
+                        <div class="stat-number">0-Config</div>
+                        <div class="stat-label">Drop-In SDK</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">1,000+</div>
-                        <div class="stat-label">Community Workflows</div>
+                        <div class="stat-number">60-80%</div>
+                        <div class="stat-label">Cost Savings</div>
                     </div>
                 </div>
             </div>
@@ -559,55 +510,55 @@
     <section id="api" class="section section-light">
         <div class="container">
             <h2>Build Your Own Integration</h2>
-            <p class="section-intro">Extend Glean with custom integrations using our API and SDK</p>
+            <p class="section-intro">Extend Memori with memory APIs, SDKs, and framework adapters</p>
             
             <div class="learning-grid">
                 <div class="learning-card" style="background: white; color: var(--text-dark);">
-                    <h3>🔌 Glean API</h3>
-                    <p style="margin: 1rem 0;">Build custom integrations that interact with Glean programmatically.</p>
+                    <h3>🔌 Memory APIs</h3>
+                    <p style="margin: 1rem 0;">Capture, recall, and attribute memory across agents and users.</p>
                     <ul>
-                        <li>Execute commands</li>
-                        <li>Read command output</li>
-                        <li>Manage workflows</li>
-                        <li>Access Glean Drive</li>
+                        <li>Attribution for entities + processes</li>
+                        <li>Recall and semantic search</li>
+                        <li>Memory policies & TTL</li>
+                        <li>Explainable lineage</li>
                     </ul>
-                    <a href="#" class="btn btn-primary" style="margin-top: 1rem;">View API Docs</a>
+                    <a href="https://memorilabs.ai/docs" class="btn btn-primary" style="margin-top: 1rem;">View API Docs</a>
                 </div>
 
                 <div class="learning-card" style="background: white; color: var(--text-dark);">
-                    <h3>📦 MCP SDK</h3>
-                    <p style="margin: 1rem 0;">Build Model Context Protocol servers that extend Glean's AI capabilities.</p>
+                    <h3>📦 Memori SDK</h3>
+                    <p style="margin: 1rem 0;">Drop-in SDKs for Python and TypeScript with database-agnostic support.</p>
                     <ul>
-                        <li>Python, TypeScript, Go SDKs</li>
-                        <li>Template repositories</li>
-                        <li>Testing tools</li>
-                        <li>Marketplace publishing</li>
+                        <li>LangChain & PydanticAI adapters</li>
+                        <li>Streaming + async support</li>
+                        <li>Type-safe memory models</li>
+                        <li>Open-source tooling</li>
                     </ul>
-                    <a href="viewer.html?doc=mcp-marketplace" class="btn btn-primary" style="margin-top: 1rem;">Get Started</a>
+                    <a href="https://github.com/MemoriLabs/Memori" class="btn btn-primary" style="margin-top: 1rem;">Get Started</a>
                 </div>
 
                 <div class="learning-card" style="background: white; color: var(--text-dark);">
-                    <h3>🎨 Extension Framework</h3>
-                    <p style="margin: 1rem 0;">Create custom UI extensions and workflows for the Glean ecosystem.</p>
+                    <h3>🧪 Memory Patterns</h3>
+                    <p style="margin: 1rem 0;">Adopt memory-first patterns for agents, personalization, and workflows.</p>
                     <ul>
-                        <li>React-based UI</li>
-                        <li>Custom commands</li>
-                        <li>Theme support</li>
-                        <li>Workflow automation</li>
+                        <li>Conversation memory</li>
+                        <li>Agent state and planning</li>
+                        <li>Hybrid RAG + memory</li>
+                        <li>Cost optimization playbooks</li>
                     </ul>
-                    <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Extension Docs</a>
+                    <a href="https://memorilabs.ai/blog/rag-vs-memory-for-ai-agents/" class="btn btn-primary" style="margin-top: 1rem;">Memory Guides</a>
                 </div>
 
                 <div class="learning-card" style="background: white; color: var(--text-dark);">
-                    <h3>🤝 Partnership Program</h3>
-                    <p style="margin: 1rem 0;">Partner with Glean to co-develop deep integrations and promote to our community.</p>
+                    <h3>🤝 Enterprise Partnerships</h3>
+                    <p style="margin: 1rem 0;">Partner with Memori to ship memory-first AI at scale.</p>
                     <ul>
-                        <li>Technical support</li>
+                        <li>Architecture reviews</li>
+                        <li>Security and compliance planning</li>
                         <li>Co-marketing opportunities</li>
-                        <li>Early access to features</li>
-                        <li>Revenue sharing options</li>
+                        <li>Dedicated enablement</li>
                     </ul>
-                    <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Apply Now</a>
+                    <a href="https://memorilabs.ai" class="btn btn-primary" style="margin-top: 1rem;">Apply Now</a>
                 </div>
             </div>
         </div>
@@ -616,10 +567,10 @@
     <section class="cta-section">
         <div class="container">
             <h2>Ready to Integrate?</h2>
-            <p>Start building with Glean's ecosystem today</p>
+            <p>Start building memory-first AI with Memori today</p>
             <div class="cta-buttons">
-                <a href="#" class="btn btn-primary btn-large">View API Documentation</a>
-                <a href="viewer.html?doc=mcp-marketplace" class="btn btn-outline btn-large">Browse MCP Servers</a>
+                <a href="https://memorilabs.ai/docs" class="btn btn-primary btn-large">View API Documentation</a>
+                <a href="https://github.com/MemoriLabs/Memori" class="btn btn-outline btn-large">View GitHub</a>
                 <a href="portal.html" class="btn btn-outline btn-large">Developer Portal</a>
             </div>
         </div>
@@ -632,9 +583,9 @@
                     <h4>Ecosystem</h4>
                     <ul>
                         <li><a href="#integrations">All Integrations</a></li>
-                        <li><a href="#api">API Documentation</a></li>
-                        <li><a href="viewer.html?doc=mcp-marketplace">MCP Marketplace</a></li>
-                        <li><a href="gleeees.html">Gleeees</a></li>
+                        <li><a href="#api">Memory APIs</a></li>
+                        <li><a href="https://memorilabs.ai/docs">Docs</a></li>
+                        <li><a href="https://github.com/MemoriLabs/Memori">GitHub</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -650,23 +601,23 @@
                     <h4>Community</h4>
                     <ul>
                         <li><a href="community.html">Dashboard</a></li>
-                        <li><a href="https://go.glean.dev/join-preview">Slack</a></li>
-                        <li><a href="https://github.com/gleandotdev">GitHub</a></li>
-                        <li><a href="https://twitter.com/gleandotdev">Twitter</a></li>
+                        <li><a href="https://go.memorilabs.ai/join-preview">Slack</a></li>
+                        <li><a href="https://github.com/MemoriLabs/Memori">GitHub</a></li>
+                        <li><a href="https://twitter.com/MemoriLabs">Twitter</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Resources</h4>
                     <ul>
                         <li><a href="index.html">DevRel Home</a></li>
-                        <li><a href="https://docs.glean.dev">Documentation</a></li>
-                        <li><a href="https://glean.dev/blog">Blog</a></li>
-                        <li><a href="https://glean.dev/university">Glean University</a></li>
+                        <li><a href="https://memorilabs.ai/docs">Documentation</a></li>
+                        <li><a href="https://memorilabs.ai/blog">Blog</a></li>
+                        <li><a href="https://memorilabs.ai">MemoriLabs</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Glean. Built with ❤️ by the community.</p>
+                <p>&copy; 2026 Memori. Built with ❤️ by the community.</p>
             </div>
         </div>
     </footer>

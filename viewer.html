@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glean Documentation Viewer</title>
+    <title>Memori Documentation Viewer</title>
     <style>
         * {
             margin: 0;
@@ -357,7 +357,7 @@
 </head>
 <body>
     <header>
-        <div class="logo">Glean Documentation</div>
+        <div class="logo">Memori Documentation</div>
         <div>
             <button class="mobile-toggle" onclick="toggleSidebar()">☰ Menu</button>
             <a href="index.html" class="home-link">← Back to Home</a>
@@ -394,7 +394,7 @@
                 </a>
                 <a class="nav-item" data-doc="mcp-marketplace">
                     <span class="nav-item-icon">🛒</span>
-                    MCP Marketplace
+                    Memory Marketplace
                 </a>
             </div>
 
@@ -434,7 +434,7 @@
                 </a>
                 <a class="nav-item" data-doc="mcp-quickstart">
                     <span class="nav-item-icon">⚡</span>
-                    MCP Quick Start
+                    Memory Quick Start
                 </a>
                 <a class="nav-item" data-doc="advanced-workflows">
                     <span class="nav-item-icon">🔧</span>
@@ -494,11 +494,11 @@
         const documents = {
             // Programs
             'bounty-system': {
-                title: 'Glean Bounty System',
+                title: 'Memori Bounty System',
                 path: 'docs/bounty-system.md'
             },
             'workshops': {
-                title: 'Glean Weekly Workshops',
+                title: 'Memori Weekly Workshops',
                 path: 'docs/workshops.md'
             },
             'hackathons': {
@@ -514,7 +514,7 @@
                 path: 'docs/co-working-space.md'
             },
             'mcp-marketplace': {
-                title: 'MCP Marketplace',
+                title: 'Memory Marketplace',
                 path: 'docs/mcp-marketplace.md'
             },
             // Applications
@@ -541,11 +541,11 @@
             },
             // Tutorials
             'getting-started': {
-                title: 'Getting Started with Glean',
+                title: 'Getting Started with Memori',
                 path: 'tutorials/getting-started.md'
             },
             'mcp-quickstart': {
-                title: 'MCP Quick Start Guide',
+                title: 'Memory Quick Start Guide',
                 path: 'tutorials/mcp-quickstart.md'
             },
             'advanced-workflows': {
@@ -565,8 +565,8 @@
                 title: 'Founder Lessons & Strategic Realignment',
                 path: 'docs/founder-lessons.md'
             },
-            'glean-academy': {
-                title: 'Glean Academy',
+            'memori-academy': {
+                title: 'Memori Memory Academy',
                 path: 'learning-paths.html'
             }
         };
@@ -596,7 +596,7 @@
                 contentDiv.innerHTML = html;
                 
                 // Update document title
-                document.title = `${doc.title} - Glean Documentation`;
+                document.title = `${doc.title} - Memori Documentation`;
                 
                 // Update active state
                 document.querySelectorAll('.nav-item').forEach(item => {

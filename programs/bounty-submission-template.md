@@ -1,4 +1,4 @@
-# Glean Bounty Submission
+# Memori Bounty Submission
 
 Use this template to submit your completed bounty for review.
 
@@ -252,10 +252,10 @@ By submitting this bounty, I confirm that:
 1. Complete this template
 2. Ensure all checklist items are complete
 3. Gather all links and media
-4. Email to: **bounties@glean.dev**
+4. Email to: **bounties@memorilabs.ai**
 5. **Subject Line:** Bounty Submission - [Bounty Name] - [Your Name]
 
-Alternatively, submit via the [Bounty Portal](https://bounties.glean.dev/submit)
+Alternatively, submit via the [Bounty Portal](https://bounties.memorilabs.ai/submit)
 
 ---
 
@@ -263,15 +263,15 @@ Alternatively, submit via the [Bounty Portal](https://bounties.glean.dev/submit)
 
 1. **Initial Review (1-3 days):** Automated checks and requirements verification
 2. **Community Review (3-5 days):** Community testing and feedback
-3. **Technical Review (3-7 days):** Glean team deep dive
+3. **Technical Review (3-7 days):** Memori team deep dive
 4. **Payment (1-2 days after approval):** Payment processed
 
 You'll receive updates via email throughout the review process.
 
 **Questions?**
 - Discord: #bounties
-- Email: bounties@glean.dev
+- Email: bounties@memorilabs.ai
 
 ---
 
-**Thank you for your contribution to the Glean ecosystem! 🎉**
+**Thank you for your contribution to the Memori ecosystem! 🎉**

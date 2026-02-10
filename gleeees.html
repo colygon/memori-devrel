@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gleeees - Deploy Cloud Dev Environments</title>
+    <title>Memori Playground - Memory Integrations & Examples</title>
     <style>
         * {
             margin: 0;
@@ -217,13 +217,11 @@
             padding: 2rem;
             border-radius: 12px;
             border: 2px solid var(--border);
+            flex-direction: column;
         }
 
         .status-panel.visible {
             display: block;
-        }
-            display: flex;
-            flex-direction: column;
         }
 
         .status-panel h2 {
@@ -424,6 +422,84 @@
             color: var(--primary);
         }
 
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+            margin-bottom: 0.75rem;
+            color: var(--primary);
+        }
+
+        .section-lead {
+            color: var(--text-dim);
+            margin-bottom: 1.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .card h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            color: var(--text-dim);
+            margin-bottom: 0.75rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.6rem;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            background: rgba(0, 212, 170, 0.15);
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .steps {
+            margin: 0.75rem 0 1rem;
+            padding-left: 1.25rem;
+            color: var(--text-dim);
+        }
+
+        .code-block {
+            background: rgba(0, 0, 0, 0.35);
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.85rem;
+            color: var(--text);
+            overflow-x: auto;
+        }
+
+        .pill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .pill {
+            padding: 0.4rem 0.75rem;
+            background: rgba(0, 212, 170, 0.1);
+            border: 1px solid rgba(0, 212, 170, 0.3);
+            border-radius: 999px;
+            font-size: 0.85rem;
+            color: var(--text);
+        }
+
         @media (max-width: 968px) {
             .main-content {
                 grid-template-columns: 1fr;
@@ -440,7 +516,7 @@
         <header>
             <a href="index.html" class="back-link">← Back to Portal</a>
         <h1>🚀 Gleeees</h1>
-        <p class="subtitle">Deploy instant cloud development environments with one command</p>
+        <p class="subtitle">Deploy instant, memory-ready cloud development environments with one command</p>
         </header>
 
         <div class="main-content">
@@ -500,25 +576,25 @@
         <div class="templates-section">
             <h2>Popular Templates</h2>
             <div class="quick-templates">
-                <div class="quick-template" data-prompt="Create a Python FastAPI environment with PostgreSQL, Redis, and async workers for building a production REST API">
+                <div class="quick-template" data-prompt="Create a Python FastAPI environment with PostgreSQL, Redis, and async workers for building a production REST API with Memori memory integration">
                     <h3>🚀 Production API</h3>
                     <p>FastAPI + PostgreSQL + Redis + Workers</p>
-                    <code>$ glean deploy --template production-api</code>
+                    <code>$ memori deploy --template production-api</code>
                 </div>
                 <div class="quick-template" data-prompt="Set up a Next.js 14 app with TypeScript, Tailwind CSS, and Vercel deployment ready">
                     <h3>⚡ Next.js Full Stack</h3>
                     <p>Next.js 14 + TypeScript + Tailwind</p>
-                    <code>$ glean deploy --template nextjs-ts</code>
+                    <code>$ memori deploy --template nextjs-ts</code>
                 </div>
                 <div class="quick-template" data-prompt="Create a machine learning environment with Python, Jupyter, TensorFlow, PyTorch, and GPU support">
                     <h3>🤖 ML/AI Workspace</h3>
                     <p>Python + Jupyter + TF + PyTorch</p>
-                    <code>$ glean deploy --template ml-gpu</code>
+                    <code>$ memori deploy --template ml-gpu</code>
                 </div>
                 <div class="quick-template" data-prompt="Deploy a Go microservice with gRPC, PostgreSQL, and Docker compose for local development">
                     <h3>🐹 Go Microservice</h3>
                     <p>Go + gRPC + PostgreSQL + Docker</p>
-                    <code>$ glean deploy --template go-grpc</code>
+                    <code>$ memori deploy --template go-grpc</code>
                 </div>
             </div>
         </div>
@@ -579,7 +655,7 @@
                         <p>Configuring environment</p>
                     </div>
                     <div class="status-step" id="step4">
-                        <h3><span>⏳</span> Starting Glean Agent...</h3>
+                        <h3><span>⏳</span> Starting Memori Agent...</h3>
                         <p>Initializing remote SSH</p>
                     </div>
                 </div>
@@ -629,9 +705,9 @@
 
         function showConnectionInfo() {
             const gleeeeId = generateId();
-            const sshHost = `gleeee-${gleeeeId}.glean.dev`;
+            const sshHost = `gleeee-${gleeeeId}.memorilabs.ai`;
             const sshUser = 'dev';
-            const sshCommand = `glean ssh ${sshUser}@${sshHost}`;
+            const sshCommand = `memori ssh ${sshUser}@${sshHost}`;
 
             // Fade out and hide the build steps
             const deploymentStatus = document.querySelector('.deployment-status');
@@ -645,7 +721,7 @@
                     <h3>🎉 Gleeee Deployed Successfully!</h3>
                     
                     <div class="connection-command">
-                        <div style="margin-bottom: 0.5rem; color: var(--text-dim); font-size: 0.85rem;">Connect via Glean:</div>
+                        <div style="margin-bottom: 0.5rem; color: var(--text-dim); font-size: 0.85rem;">Connect via Memori:</div>
                         <div style="color: var(--primary);">${sshCommand}</div>
                         <button class="copy-button" onclick="copyCommand('${sshCommand}')">Copy</button>
                     </div>
@@ -682,7 +758,7 @@
                     <div style="margin-top: 1rem; padding: 1rem; background: rgba(255, 184, 0, 0.1); border-radius: 4px; font-size: 0.85rem;">
                         <strong>💡 Next Steps:</strong><br>
                         1. Copy the SSH command above<br>
-                        2. Open Glean terminal<br>
+                        2. Open Memori terminal<br>
                         3. Paste and run the command<br>
                         4. Start coding with AI agents!
                     </div>

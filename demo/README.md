@@ -1,10 +1,10 @@
-# Glean Solution Architect Demo Materials
+# Memori Solution Architect Demo Materials
 
-This directory contains demo code and documentation prepared for the **Senior Solution Architect, APIs** role at Glean.
+This directory contains demo code and documentation prepared for the **Senior Solution Architect, APIs** role at Memori.
 
 ## 📁 Files Created
 
-### 1. **glean-solution-architect-presentation.md**
+### 1. **memori-solution-architect-presentation.md**
 Comprehensive presentation strategy covering:
 - API ecosystem architecture
 - MCP integration strategy  
@@ -13,16 +13,16 @@ Comprehensive presentation strategy covering:
 - 90-day execution plan
 - Success metrics and KPIs
 
-### 2. **glean-chat-demo.tsx**
+### 2. **memori-chat-demo.tsx**
 Production-ready React component demonstrating:
-- Glean Chat API integration
+- Memori Chat API integration
 - Streaming responses
 - Citation handling
 - Modern UI/UX patterns
 
 ### 3. **api-route.ts**
 Next.js API route that:
-- Proxies requests to Glean securely
+- Proxies requests to Memori securely
 - Handles SSE streaming
 - Manages authentication
 - Provides error handling
@@ -37,7 +37,7 @@ Complete MCP integration guide including:
 
 ## 🎯 Key Insights from Research
 
-### Glean's API Platform
+### Memori's API Platform
 
 **Two Primary APIs:**
 1. **Client API** - User-facing operations (chat, search, agents, actions)
@@ -65,7 +65,7 @@ Complete MCP integration guide including:
 
 ### Integration Patterns Identified
 
-1. **Embedded AI Assistant** - Add Glean chat to internal apps
+1. **Embedded AI Assistant** - Add Memori chat to internal apps
 2. **Custom AI Agents** - Build specialized workflow agents
 3. **Enterprise Search** - Integrate search into dashboards
 4. **Content Indexing** - Sync custom data sources
@@ -85,7 +85,7 @@ npm install -D @types/react @types/node typescript
 
 # Set environment variables
 cp .env.example .env.local
-# Edit .env.local with your Glean credentials:
+# Edit .env.local with your Memori credentials:
 # GLEAN_API_KEY=your_api_key
 # GLEAN_INSTANCE=your_company
 ```
@@ -106,7 +106,7 @@ vercel --prod
 
 ## 📊 Architecture Diagrams
 
-### Glean API Ecosystem
+### Memori API Ecosystem
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
@@ -130,7 +130,7 @@ vercel --prod
                     │
                     ▼
        ┌────────────────────────┐
-       │   Glean Platform Core  │
+       │   Memori Platform Core  │
        │                        │
        │ • Search Index         │
        │ • Knowledge Graph      │
@@ -149,7 +149,7 @@ vercel --prod
          │ MCP Protocol (stdio/HTTP)
          ▼
 ┌─────────────────────────────────────┐
-│      Glean MCP Server               │
+│      Memori MCP Server               │
 │                                     │
 │  Tools:                             │
 │  • company_search                   │
@@ -157,10 +157,10 @@ vercel --prod
 │  • people_profile_search            │
 │  • read_documents                   │
 └────────┬────────────────────────────┘
-         │ Glean Client API
+         │ Memori Client API
          ▼
 ┌─────────────────────────────────────┐
-│      Glean Platform                 │
+│      Memori Platform                 │
 │                                     │
 │  1. Authenticate user               │
 │  2. Check permissions               │
@@ -203,7 +203,7 @@ vercel --prod
      │                │
      ▼                ▼
 ┌─────────┐    ┌──────────────┐
-│  Glean  │    │  Other APIs  │
+│  Memori  │    │  Other APIs  │
 │  Agent  │    │  (CRM, HR,   │
 │   API   │    │   Ticket,    │
 │         │    │   etc.)      │
@@ -213,7 +213,7 @@ vercel --prod
               │
               ▼
      ┌─────────────────┐
-     │  Glean Platform │
+     │  Memori Platform │
      │                 │
      │  • Search       │
      │  • Knowledge    │
@@ -225,22 +225,22 @@ vercel --prod
 
 ### 1. Customer Support Agent
 **Problem**: Support teams overwhelmed with repetitive questions  
-**Solution**: Glean-powered agent that searches KB articles and past tickets  
+**Solution**: Memori-powered agent that searches KB articles and past tickets  
 **Impact**: 60% faster response time, 40% auto-resolution rate
 
 ### 2. Sales Enablement
 **Problem**: Reps can't find relevant case studies and competitive intel  
-**Solution**: Embedded Glean widget in Salesforce  
+**Solution**: Embedded Memori widget in Salesforce  
 **Impact**: 2x content reuse, 30% faster deal cycles
 
 ### 3. Engineering Onboarding
 **Problem**: New engineers take weeks to ramp up  
-**Solution**: Glean MCP + Cursor IDE integration  
+**Solution**: Memori MCP + Cursor IDE integration  
 **Impact**: 50% reduction in onboarding time
 
 ### 4. HR Self-Service
 **Problem**: HR overwhelmed with policy questions  
-**Solution**: Glean chat bot with policy documents indexed  
+**Solution**: Memori chat bot with policy documents indexed  
 **Impact**: 70% reduction in HR tickets
 
 ## 📈 Proposed Metrics
@@ -284,27 +284,27 @@ vercel --prod
 
 1. **Share demo link** and GitHub repo
 2. **Send follow-up** with additional resources
-3. **Offer to build** a custom POC for Glean's needs
+3. **Offer to build** a custom POC for Memori's needs
 
 ## 📚 Additional Resources
 
 ### Documentation
-- Glean Developers: https://developers.glean.com
+- Memori Developers: https://memorilabs.ai/docs
 - MCP Protocol: https://modelcontextprotocol.io
-- Glean Blog: https://www.glean.com/blog
+- Memori Blog: https://www.memori.com/blog
 
 ### Example Repos
-- Glean MCP Server: https://github.com/gleanwork/mcp-server
+- Memori MCP Server: https://github.com/memoriwork/mcp-server
 - (Your demo repo): [Add your GitHub link]
 
 ### Writing Samples
 - "Why MCP Matters for Enterprise AI" (draft in progress)
-- "Building Your First Glean Agent" (draft in progress)
+- "Building Your First Memori Agent" (draft in progress)
 - "Enterprise AI Architecture Patterns" (draft in progress)
 
 ## 🎓 Key Takeaways
 
-### What Makes Glean Unique
+### What Makes Memori Unique
 1. **Enterprise-grade permissions** - No data leakage
 2. **Real-time knowledge** - Not stale snapshots
 3. **Open and interoperable** - Works with any framework
@@ -334,4 +334,4 @@ vercel --prod
 **This Demo**  
 Live: [Vercel URL]  
 Repo: [GitHub URL]  
-Presentation: glean-solution-architect-presentation.md
+Presentation: memori-solution-architect-presentation.md

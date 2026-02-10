@@ -1,10 +1,10 @@
 # MCP Quick Start Guide
 
-Learn how to set up and use Model Context Protocol (MCP) with Glean in under 10 minutes.
+Learn how to set up and use Model Context Protocol (MCP) with Memori in under 10 minutes.
 
 ## What is MCP?
 
-Model Context Protocol (MCP) is an open standard that enables AI assistants to securely connect to external data sources and tools. With MCP, Glean's AI can:
+Model Context Protocol (MCP) is an open standard that enables AI assistants to securely connect to external data sources and tools. With MCP, Memori's AI can:
 
 - Query your databases
 - Access your APIs
@@ -14,7 +14,7 @@ Model Context Protocol (MCP) is an open standard that enables AI assistants to s
 
 ## Prerequisites
 
-- Glean terminal installed
+- Memori terminal installed
 - Basic familiarity with command line
 - Node.js 16+ or Python 3.8+ (depending on MCP server)
 
@@ -22,9 +22,9 @@ Model Context Protocol (MCP) is an open standard that enables AI assistants to s
 
 Let's install a simple MCP server to get started.
 
-### Option 1: Using Glean Marketplace (Easiest)
+### Option 1: Using Memori Marketplace (Easiest)
 
-1. Open Glean
+1. Open Memori
 2. Press `Cmd/Ctrl + P` to open Command Palette
 3. Type "MCP Marketplace"
 4. Browse available servers
@@ -51,17 +51,17 @@ cp .env.example .env
 npm start
 ```
 
-**Register with Glean:**
+**Register with Memori:**
 
 ```bash
-glean mcp add github-mcp ./github-mcp-server
+memori mcp add github-mcp ./github-mcp-server
 ```
 
 ## Configuring MCP
 
 ### Configuration File
 
-Glean stores MCP configuration in `~/.glean/mcp-config.json`:
+Memori stores MCP configuration in `~/.memori/mcp-config.json`:
 
 ```json
 {
@@ -93,18 +93,18 @@ Reload your shell:
 source ~/.zshrc
 ```
 
-## Using MCP with Glean AI
+## Using MCP with Memori AI
 
-Once configured, MCP servers enhance Glean's AI capabilities.
+Once configured, MCP servers enhance Memori's AI capabilities.
 
 ### Example: Querying GitHub
 
-**Ask Glean AI:**
+**Ask Memori AI:**
 ```
 "Show me my recent pull requests"
 ```
 
-Glean will:
+Memori will:
 1. Use the GitHub MCP server
 2. Fetch your PRs
 3. Display results in a clean format
@@ -113,12 +113,12 @@ Glean will:
 
 With a PostgreSQL MCP server:
 
-**Ask Glean AI:**
+**Ask Memori AI:**
 ```
 "Show users who signed up in the last 7 days"
 ```
 
-Glean generates and executes the SQL query safely.
+Memori generates and executes the SQL query safely.
 
 ## Available MCP Servers
 
@@ -144,44 +144,44 @@ Glean generates and executes the SQL query safely.
 - `slack-mcp` - Slack messaging
 - `jira-mcp` - Issue tracking
 
-Browse all servers: [marketplace.glean.dev](https://marketplace.glean.dev)
+Browse all servers: [marketplace.memorilabs.ai](https://marketplace.memorilabs.ai)
 
 ## Managing MCP Servers
 
 ### List Installed Servers
 
 ```bash
-glean mcp list
+memori mcp list
 ```
 
 ### Start a Server
 
 ```bash
-glean mcp start github-mcp
+memori mcp start github-mcp
 ```
 
 ### Stop a Server
 
 ```bash
-glean mcp stop github-mcp
+memori mcp stop github-mcp
 ```
 
 ### Update a Server
 
 ```bash
-glean mcp update github-mcp
+memori mcp update github-mcp
 ```
 
 ### Remove a Server
 
 ```bash
-glean mcp remove github-mcp
+memori mcp remove github-mcp
 ```
 
 ### View Logs
 
 ```bash
-glean mcp logs github-mcp
+memori mcp logs github-mcp
 ```
 
 ## Building Your First MCP Server
@@ -231,16 +231,16 @@ server.tool('get_system_info', {
 server.start();
 ```
 
-### Step 3: Add to Glean
+### Step 3: Add to Memori
 
 ```bash
-glean mcp add my-system ~/.../my-system-mcp/index.js
-glean mcp start my-system
+memori mcp add my-system ~/.../my-system-mcp/index.js
+memori mcp start my-system
 ```
 
 ### Step 4: Test
 
-Ask Glean AI: "What's my system information?"
+Ask Memori AI: "What's my system information?"
 
 ## Security Best Practices
 
@@ -300,12 +300,12 @@ export GLEAN_MCP_LOG_LEVEL=debug
 
 **Check configuration:**
 ```bash
-glean mcp config validate
+memori mcp config validate
 ```
 
 **View logs:**
 ```bash
-glean mcp logs server-name
+memori mcp logs server-name
 ```
 
 **Common issues:**
@@ -317,7 +317,7 @@ glean mcp logs server-name
 
 **Restart the server:**
 ```bash
-glean mcp restart server-name
+memori mcp restart server-name
 ```
 
 **Check process:**
@@ -329,11 +329,11 @@ ps aux | grep mcp
 
 **Review permissions in config:**
 ```bash
-cat ~/.glean/mcp-config.json
+cat ~/.memori/mcp-config.json
 ```
 
 **Update permissions:**
-Edit the config file and restart Glean.
+Edit the config file and restart Memori.
 
 ## Advanced Topics
 
@@ -393,14 +393,14 @@ server.tool('risky_operation', {
 ### Learn More
 
 - 📖 [MCP Specification](https://spec.modelcontextprotocol.io)
-- 🛠️ [Server Development Guide](https://docs.glean.dev/mcp/development)
-- 🔒 [Security Best Practices](https://docs.glean.dev/mcp/security)
-- 🌟 [Example Servers](https://github.com/gleandotdev/mcp-examples)
+- 🛠️ [Server Development Guide](https://docs.memorilabs.ai/mcp/development)
+- 🔒 [Security Best Practices](https://docs.memorilabs.ai/mcp/security)
+- 🌟 [Example Servers](https://github.com/MemoriLabs/Memori/mcp-examples)
 
 ### Build Something
 
 - Create an MCP server for your favorite API
-- Submit it to the Glean Marketplace
+- Submit it to the Memori Marketplace
 - Apply for a bounty or grant
 
 ### Join the Community
@@ -411,11 +411,11 @@ server.tool('risky_operation', {
 
 ## Resources
 
-- **Marketplace**: [marketplace.glean.dev](https://marketplace.glean.dev)
-- **Documentation**: [docs.glean.dev/mcp](https://docs.glean.dev/mcp)
-- **GitHub**: [github.com/gleandotdev/mcp](https://github.com/gleandotdev/mcp)
-- **Examples**: [github.com/gleandotdev/mcp-examples](https://github.com/gleandotdev/mcp-examples)
+- **Marketplace**: [marketplace.memorilabs.ai](https://marketplace.memorilabs.ai)
+- **Documentation**: [docs.memorilabs.ai/mcp](https://docs.memorilabs.ai/mcp)
+- **GitHub**: [github.com/MemoriLabs/Memori/mcp](https://github.com/MemoriLabs/Memori/mcp)
+- **Examples**: [github.com/MemoriLabs/Memori/mcp-examples](https://github.com/MemoriLabs/Memori/mcp-examples)
 
 ---
 
-**Ready to supercharge Glean with MCP! 🚀**
+**Ready to supercharge Memori with MCP! 🚀**
